@@ -413,7 +413,7 @@ def render_page(page):
             .replace("{{nav}}", nav_html(lang, page["key"].split("/")[0])).replace("{{langs}}", lang_switch(page))
             .replace("{{home}}", f"/{lang}/").replace("{{site_name}}", SITE["nom"]).replace("{{hero}}", hero)
             .replace("{{content}}", body_html).replace("{{narrow}}", "narrow" if page["section"] == "journal" or meta.get("narrow") else "")
-            .replace("{{footer_adresse}}", f"{SITE['adresse']['rue']}, {SITE['adresse']['ville']} {SITE['adresse']['cp']}, {SITE['adresse']['pays'][lang]}")
+            .replace("{{footer_adresse}}", f"{SITE['adresse']['ville']} {SITE['adresse']['cp']}, {SITE['adresse']['pays'][lang]}")
             .replace("{{footer_contact}}", f'<a href="tel:{c["telephone"].replace(" ","")}">{c["telephone"]}</a><a href="https://wa.me/{wa}">WhatsApp</a><a href="mailto:{c["email"]}">{c["email"]}</a>')
             .replace("{{footer_links}}", "".join(f'<a href="{s["url"]}" rel="noopener" target="_blank">{s["nom"]}</a>' for s in SITE["reseaux"]))
             .replace("{{menu_label}}", ui["menu"]).replace("{{year}}", str(datetime.date.today().year))

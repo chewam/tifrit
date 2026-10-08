@@ -33,8 +33,8 @@
       },
       "fr": {
         "titre": "3 jours à Tifrit",
-        "sous_titre": "La formule phare. 3 nuits",
-        "prix_detail": "par personne, tout compris, base 2 personnes",
+        "sous_titre": "3 nuits. Tous les repas",
+        "prix_detail": "par personne, tout compris, en chambre pour deux",
         "intro": "Trois jours pour entrer dans la vallée avec les gens qui y vivent. Chaque journée est proposée, aucune n'est obligatoire. On peut la sauter et rester au bord de l'eau.",
         "jours": [
           {
@@ -69,8 +69,8 @@
       },
       "en": {
         "titre": "3 days at Tifrit",
-        "sous_titre": "Our signature stay. 3 nights",
-        "prix_detail": "per person, all inclusive, based on 2 people",
+        "sous_titre": "3 nights. All meals",
+        "prix_detail": "per person, all inclusive, sharing a double room",
         "intro": "Three days to enter the valley with the people who live there. Every day is offered, none is compulsory. You can skip it and stay by the water.",
         "jours": [
           {
@@ -105,8 +105,8 @@
       },
       "de": {
         "titre": "3 Tage in Tifrit",
-        "sous_titre": "Unser Hauptangebot. 3 Nächte",
-        "prix_detail": "pro Person, alles inklusive, bei 2 Personen",
+        "sous_titre": "3 Nächte. Alle Mahlzeiten",
+        "prix_detail": "pro Person, alles inklusive, im Doppelzimmer",
         "intro": "Drei Tage, um mit den Menschen, die hier leben, ins Tal einzutauchen. Jeder Tag ist ein Angebot, keiner ist Pflicht. Man kann ihn auslassen und am Wasser bleiben.",
         "jours": [
           {
@@ -150,7 +150,7 @@
       "fr": {
         "titre": "5 jours à pied",
         "sous_titre": "5 nuits. Une sortie par jour",
-        "prix_detail": "par personne, tout compris, base 2 personnes",
+        "prix_detail": "par personne, tout compris, en chambre pour deux",
         "intro": "Cinq jours de marche au départ de la maison, 4 à 6 heures par jour, sans changer de lit. Les sentiers balisés se font seul, les étapes longues avec un guide du village. On choisit chaque matin.",
         "jours": [
           {
@@ -184,7 +184,7 @@
       "en": {
         "titre": "5 days on foot",
         "sous_titre": "5 nights. One outing a day",
-        "prix_detail": "per person, all inclusive, based on 2 people",
+        "prix_detail": "per person, all inclusive, sharing a double room",
         "intro": "Five days of walking from the house, 4 to 6 hours a day, without changing beds. The marked trails can be done alone, the long stages with a guide from the village. You choose each morning.",
         "jours": [
           {
@@ -218,7 +218,7 @@
       "de": {
         "titre": "5 Tage zu Fuß",
         "sous_titre": "5 Nächte. Täglich eine Tour",
-        "prix_detail": "pro Person, alles inklusive, bei 2 Personen",
+        "prix_detail": "pro Person, alles inklusive, im Doppelzimmer",
         "intro": "Fünf Wandertage vom Haus aus, 4 bis 6 Stunden täglich, ohne Bettenwechsel. Die markierten Wege geht man allein, die langen Etappen mit einem Guide aus dem Dorf. Entschieden wird jeden Morgen.",
         "jours": [
           {
