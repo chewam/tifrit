@@ -9,6 +9,19 @@
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -5% 0px'});
     els.forEach(function(el){el.classList.add('reveal');io.observe(el)});
   }
+  // formulaire sans serveur : la demande part par WhatsApp (ou e-mail), déjà rédigée
+  var form=document.querySelector('form.form');
+  if(form&&!form.getAttribute('action')){
+    form.addEventListener('submit',function(ev){
+      ev.preventDefault();
+      var f=new FormData(form),lines=[];
+      form.querySelectorAll('label').forEach(function(l){var el=l.querySelector('input,select,textarea');if(!el||!el.value)return;var txt=l.firstChild.textContent.trim();var v=el.tagName==='SELECT'?el.options[el.selectedIndex].text:el.value;lines.push(txt+' : '+v);});
+      var msg=(form.getAttribute('data-intro')||'')+'\n'+lines.join('\n');
+      var wa=form.getAttribute('data-wa'),mail=form.getAttribute('data-mail');
+      var w=window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(msg),'_blank');
+      if(!w)location.href='mailto:'+mail+'?subject='+encodeURIComponent(form.getAttribute('data-subject')||'')+'&body='+encodeURIComponent(msg);
+    });
+  }
   var q=new URLSearchParams(location.search).get('sejour'),sel=document.getElementById('sejour');
   if(q&&sel){sel.value=q;}
   var cal=document.getElementById('cal');

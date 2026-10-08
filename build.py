@@ -126,7 +126,7 @@ def render_reserver(lang):
   <div id="cal" data-dispo='{json.dumps(DISPO, ensure_ascii=False)}' data-lang="{lang}"></div>
   <p class="small">{ui['cal_note']}</p>
 </div>
-<form class="form" action="{SITE['form_action']}" method="POST" name="reservation" data-netlify="true">
+<form class="form" action="{SITE['form_action']}" method="POST" name="reservation" data-netlify="true" data-wa="{wa}" data-mail="{c['email']}" data-intro="{html.escape(ui['wa_message'])}" data-subject="{html.escape(ui['f_subject'])}">
   <input type="hidden" name="lang" value="{lang}">
   <div class="row"><label>{ui['f_arrivee']}<input type="date" name="arrivee" required></label><label>{ui['f_depart']}<input type="date" name="depart" required></label></div>
   <div class="row"><label>{ui['f_personnes']}<select name="personnes"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></label>

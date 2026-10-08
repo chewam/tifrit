@@ -41,11 +41,20 @@ puis ouvrir http://127.0.0.1:8765/fr/.
 
 Les images : pour chaque `nom.jpg` dans `static/images/`, ajouter si possible `nom.webp` et `nom-600.webp` (version légère pour les téléphones). Le script `tools/images.py` les fabrique.
 
-## Hébergement
+## Hébergement sur Vercel
 
-Prévu pour Netlify (gratuit) : `netlify.toml` contient la commande de construction, les redirections des anciennes adresses WordPress et la mise en cache des images. Le formulaire de réservation utilise Netlify Forms (attribut `data-netlify`). Sur un autre hébergeur, remplacer `form_action` dans `data/site.json` par l'adresse d'un service de formulaire (Formspree par exemple).
+1. Sur vercel.com, « Add New Project », importer le dépôt GitHub `chewam/tifrit`. `vercel.json` fournit la commande de construction (`python3 build.py`), le dossier `public`, les redirections des anciennes adresses WordPress et la mise en cache des images. Rien d'autre à régler.
+2. Ajouter le domaine `tifritecolodge.com` dans les réglages du projet et suivre les instructions DNS. Le certificat est automatique.
 
-Pour l'administration à `/admin/`, activer Netlify Identity et Git Gateway dans les réglages du site Netlify, puis inviter Rachid par e-mail.
+**Formulaire de réservation** : sans serveur. À l'envoi, la demande s'ouvre déjà rédigée dans WhatsApp (ou dans l'e-mail si WhatsApp est bloqué). Pour passer par un service de formulaire à la place, renseigner `form_action` dans `data/site.json` avec l'adresse fournie par ce service.
+
+**Interface d'édition `/admin/`** : connexion par GitHub. Une fois :
+- créer une « OAuth App » GitHub (Settings, Developer settings, OAuth Apps) avec comme URL de rappel `https://tifritecolodge.com/api/callback` ;
+- dans Vercel, ajouter les variables d'environnement `OAUTH_GITHUB_CLIENT_ID` et `OAUTH_GITHUB_CLIENT_SECRET` ;
+- donner à Rachid un compte GitHub avec accès en écriture au dépôt.
+Chaque modification dans `/admin/` devient un commit, et Vercel reconstruit le site en une minute.
+
+`netlify.toml` reste dans le dépôt au cas où l'hébergement changerait.
 
 ## À vérifier avant la mise en ligne
 

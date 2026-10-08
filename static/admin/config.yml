@@ -1,7 +1,11 @@
-# Decap CMS : interface d'édition à /admin/ (hébergement Netlify + Netlify Identity).
+# Decap CMS : interface d'édition à /admin/. Hébergement Vercel : connexion par GitHub
+# (fonctions api/auth.js et api/callback.js, variables OAUTH_GITHUB_CLIENT_ID et OAUTH_GITHUB_CLIENT_SECRET).
 backend:
-  name: git-gateway
+  name: github
+  repo: chewam/tifrit
   branch: main
+  base_url: https://tifritecolodge.com
+  auth_endpoint: api/auth
 locale: fr
 media_folder: static/images
 public_folder: /images

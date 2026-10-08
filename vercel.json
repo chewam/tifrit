@@ -1,0 +1,104 @@
+{
+  "buildCommand": "python3 build.py",
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/fr/accueil",
+      "destination": "/fr/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/a-propos",
+      "destination": "/fr/maison/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/restaurant",
+      "destination": "/fr/sejours/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/aventures",
+      "destination": "/fr/sejours/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/contact",
+      "destination": "/fr/reserver/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/en/house/",
+      "permanent": true
+    },
+    {
+      "source": "/rooms/:path*",
+      "destination": "/en/house/",
+      "permanent": true
+    },
+    {
+      "source": "/restaurant",
+      "destination": "/en/stays/",
+      "permanent": true
+    },
+    {
+      "source": "/adventures",
+      "destination": "/en/stays/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/en/book/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/en/valley/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/rachid",
+      "destination": "/fr/maison/#hotes",
+      "permanent": true
+    },
+    {
+      "source": "/en/rachid",
+      "destination": "/en/house/#hotes",
+      "permanent": true
+    },
+    {
+      "source": "/de/rachid",
+      "destination": "/de/haus/#hotes",
+      "permanent": true
+    },
+    {
+      "source": "/fr/journal/:path*",
+      "destination": "/fr/vallee/",
+      "permanent": true
+    },
+    {
+      "source": "/en/journal/:path*",
+      "destination": "/en/valley/",
+      "permanent": true
+    },
+    {
+      "source": "/de/journal/:path*",
+      "destination": "/de/tal/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

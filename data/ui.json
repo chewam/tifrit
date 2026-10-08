@@ -33,7 +33,7 @@
     "f_email": "Votre e-mail",
     "f_message": "Un mot (enfants, régime, transfert aéroport…)",
     "f_envoyer": "Envoyer la demande",
-    "f_note": "Réponse dans la journée, par e-mail ou par message, avec la confirmation de vos dates.",
+    "f_note": "En envoyant, votre demande s'ouvre dans votre messagerie, déjà rédigée. Réponse dans la journée avec la confirmation de vos dates.",
     "footer_note": "Site statique, sans cookies ni traceurs.",
     "strip": [
       "Vallée du Paradis",
@@ -49,7 +49,8 @@
     "map_osm": "Voir sur OpenStreetMap",
     "map_missing": "Carte à venir : coordonnées GPS à renseigner",
     "voir_sejours": "Voir les séjours",
-    "nb_avis": "avis publiés"
+    "nb_avis": "avis publiés",
+    "f_subject": "Demande de réservation"
   },
   "en": {
     "nav": {
@@ -85,7 +86,7 @@
     "f_email": "Your e-mail",
     "f_message": "A word (children, diet, airport shuttle…)",
     "f_envoyer": "Send request",
-    "f_note": "You get a reply within the day, by e-mail or message, confirming your dates.",
+    "f_note": "When you send, your request opens in your messaging app, already written. You get a reply within the day confirming your dates.",
     "footer_note": "Static site, no cookies, no trackers.",
     "strip": [
       "Paradise Valley",
@@ -101,7 +102,8 @@
     "map_osm": "See on OpenStreetMap",
     "map_missing": "Map coming soon: GPS coordinates to fill in",
     "voir_sejours": "See the stays",
-    "nb_avis": "published reviews"
+    "nb_avis": "published reviews",
+    "f_subject": "Booking request"
   },
   "de": {
     "nav": {
@@ -137,7 +139,7 @@
     "f_email": "Ihre E-Mail",
     "f_message": "Ein paar Worte (Kinder, Ernährung, Flughafentransfer…)",
     "f_envoyer": "Anfrage senden",
-    "f_note": "Antwort noch am selben Tag, per E-Mail oder Nachricht, mit der Bestätigung Ihrer Daten.",
+    "f_note": "Beim Senden öffnet sich Ihre Anfrage fertig formuliert in Ihrer Messaging-App. Antwort noch am selben Tag mit der Bestätigung Ihrer Daten.",
     "footer_note": "Statische Website, ohne Cookies und Tracker.",
     "strip": [
       "Paradise Valley",
@@ -153,6 +155,7 @@
     "map_osm": "Auf OpenStreetMap ansehen",
     "map_missing": "Karte folgt: GPS-Koordinaten eintragen",
     "voir_sejours": "Aufenthalte ansehen",
-    "nb_avis": "veröffentlichte Bewertungen"
+    "nb_avis": "veröffentlichte Bewertungen",
+    "f_subject": "Buchungsanfrage"
   }
 }
