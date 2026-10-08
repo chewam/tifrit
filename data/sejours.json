@@ -1,0 +1,352 @@
+{
+  "_aide": "Les prix sont des placeholders tant que prix_confirme est false (le site affiche alors « tarif indicatif »). Montant tout compris, voir prix_detail.",
+  "nuit_seule": {
+    "prix_confirme": false,
+    "prix": {
+      "montant": "35",
+      "devise": "€"
+    },
+    "fr": {
+      "titre": "Une nuit ou deux",
+      "texte": "Chambre avec vue et petit-déjeuner. Dîner sur demande. Les sorties et les ateliers restent accessibles à la journée.",
+      "prix_detail": "par chambre et par nuit, petit-déjeuner inclus"
+    },
+    "en": {
+      "titre": "A night or two",
+      "texte": "Room with a view and breakfast. Dinner on request. Outings and workshops can be added by the day.",
+      "prix_detail": "per room per night, breakfast included"
+    },
+    "de": {
+      "titre": "Eine oder zwei Nächte",
+      "texte": "Zimmer mit Aussicht und Frühstück. Abendessen auf Wunsch. Ausflüge und Werkstätten lassen sich tageweise dazubuchen.",
+      "prix_detail": "pro Zimmer und Nacht, mit Frühstück"
+    }
+  },
+  "formules": [
+    {
+      "id": "trois-jours",
+      "phare": true,
+      "prix_confirme": false,
+      "prix": {
+        "montant": "390",
+        "devise": "€"
+      },
+      "fr": {
+        "titre": "3 jours à Tifrit",
+        "sous_titre": "La formule phare. 3 nuits",
+        "prix_detail": "par personne, tout compris, base 2 personnes",
+        "intro": "Trois jours pour entrer dans la vallée avec les gens qui y vivent. Chaque journée est proposée, aucune n'est obligatoire. On peut la sauter et rester au bord de l'eau.",
+        "jours": [
+          {
+            "titre": "Jour 1. Arriver",
+            "texte": "Thé sur la terrasse, tour de la maison en pisé, marche dans la palmeraie au coucher du soleil. Dîner à la table commune."
+          },
+          {
+            "titre": "Jour 2. Les bassins",
+            "texte": "Boucle à pied par le sentier balisé jusqu'aux piscines naturelles, avant l'arrivée des bus. Baignade, pique-nique. Le soir, on cuisine le tajine ensemble."
+          },
+          {
+            "titre": "Jour 3. L'oasis et le miel",
+            "texte": "Montée à l'oasis avec quelqu'un du village, visite de l'apiculteur, déjeuner chez l'habitant. Le jeudi, c'est le marché d'Imouzzer."
+          },
+          {
+            "titre": "Jour 4. Repartir",
+            "texte": "Petit-déjeuner au bord de la piscine. Navette vers Agadir ou l'aéroport si vous le souhaitez."
+          }
+        ],
+        "inclus": [
+          "3 nuits en chambre avec vue",
+          "Tous les repas, cuisinés à la maison",
+          "Deux sorties avec un guide du village",
+          "Cuisine du tajine et visite chez l'apiculteur",
+          "Eau filtrée, thé et fruits à volonté"
+        ],
+        "pas_pour": [
+          "vous cherchez une vie nocturne : ici le soir, c'est la terrasse et les étoiles",
+          "vous cherchez une plage : l'océan est à 40 minutes",
+          "la marche vous est difficile : les sentiers sont caillouteux"
+        ]
+      },
+      "en": {
+        "titre": "3 days at Tifrit",
+        "sous_titre": "Our signature stay. 3 nights",
+        "prix_detail": "per person, all inclusive, based on 2 people",
+        "intro": "Three days to enter the valley with the people who live there. Every day is offered, none is compulsory. You can skip it and stay by the water.",
+        "jours": [
+          {
+            "titre": "Day 1. Arrive",
+            "texte": "Tea on the terrace, a walk around the rammed-earth house, sunset stroll in the palm grove. Dinner at the shared table."
+          },
+          {
+            "titre": "Day 2. The pools",
+            "texte": "Loop walk on the marked trail to the natural pools, before the buses arrive. Swim, picnic. In the evening, we cook the tagine together."
+          },
+          {
+            "titre": "Day 3. The oasis and the honey",
+            "texte": "Up to the oasis with someone from the village, visit to the beekeeper, lunch with a local family. On Thursdays, Imouzzer market."
+          },
+          {
+            "titre": "Day 4. Leave",
+            "texte": "Breakfast by the pool. Shuttle to Agadir or the airport if you wish."
+          }
+        ],
+        "inclus": [
+          "3 nights in a room with a view",
+          "All meals, home-cooked",
+          "Two outings with a guide from the village",
+          "Tagine cooking and beekeeper visit",
+          "Filtered water, tea and fruit all day"
+        ],
+        "pas_pour": [
+          "you are after nightlife: here the evening is the terrace and the stars",
+          "you are looking for a beach: the ocean is 40 minutes away",
+          "walking is hard for you: the trails are rocky"
+        ]
+      },
+      "de": {
+        "titre": "3 Tage in Tifrit",
+        "sous_titre": "Unser Hauptangebot. 3 Nächte",
+        "prix_detail": "pro Person, alles inklusive, bei 2 Personen",
+        "intro": "Drei Tage, um mit den Menschen, die hier leben, ins Tal einzutauchen. Jeder Tag ist ein Angebot, keiner ist Pflicht. Man kann ihn auslassen und am Wasser bleiben.",
+        "jours": [
+          {
+            "titre": "Tag 1. Ankommen",
+            "texte": "Tee auf der Terrasse, Rundgang durchs Stampflehmhaus, Spaziergang im Palmenhain bei Sonnenuntergang. Abendessen am gemeinsamen Tisch."
+          },
+          {
+            "titre": "Tag 2. Die Naturpools",
+            "texte": "Rundweg über den markierten Pfad zu den Naturpools, bevor die Busse kommen. Baden, Picknick. Abends kochen wir gemeinsam die Tajine."
+          },
+          {
+            "titre": "Tag 3. Die Oase und der Honig",
+            "texte": "Aufstieg zur Oase mit jemandem aus dem Dorf, Besuch beim Imker, Mittagessen bei einer Familie. Donnerstags: Markt in Imouzzer."
+          },
+          {
+            "titre": "Tag 4. Abreise",
+            "texte": "Frühstück am Pool. Auf Wunsch Shuttle nach Agadir oder zum Flughafen."
+          }
+        ],
+        "inclus": [
+          "3 Nächte im Zimmer mit Aussicht",
+          "Alle Mahlzeiten, hausgemacht",
+          "Zwei Ausflüge mit einem Guide aus dem Dorf",
+          "Tajine kochen und Imkerbesuch",
+          "Gefiltertes Wasser, Tee und Obst den ganzen Tag"
+        ],
+        "pas_pour": [
+          "Sie Nachtleben suchen: hier gehören die Abende der Terrasse und den Sternen",
+          "Sie einen Strand suchen: der Ozean ist 40 Minuten entfernt",
+          "Ihnen Gehen schwerfällt: die Wege sind steinig"
+        ]
+      }
+    },
+    {
+      "id": "a-pied",
+      "prix_confirme": false,
+      "prix": {
+        "montant": "620",
+        "devise": "€"
+      },
+      "fr": {
+        "titre": "5 jours à pied",
+        "sous_titre": "5 nuits. Une sortie par jour",
+        "prix_detail": "par personne, tout compris, base 2 personnes",
+        "intro": "Cinq jours de marche au départ de la maison, 4 à 6 heures par jour, sans changer de lit. Les sentiers balisés se font seul, les étapes longues avec un guide du village. On choisit chaque matin.",
+        "jours": [
+          {
+            "titre": "Jours 1 et 2",
+            "texte": "Les bassins par le sentier du haut, puis l'oasis et ses jardins en terrasses."
+          },
+          {
+            "titre": "Jour 3",
+            "texte": "Les cascades d'Imouzzer, en eau depuis 2026, et le village."
+          },
+          {
+            "titre": "Jour 4",
+            "texte": "Les ruches d'Inzerki, le plus grand rucher collectif du monde, en terre et en bois. En voiture puis à pied."
+          },
+          {
+            "titre": "Jour 5",
+            "texte": "La crête au-dessus de la maison, le grand panorama sur la vallée. Départ tôt."
+          }
+        ],
+        "inclus": [
+          "5 nuits en chambre avec vue",
+          "Tous les repas et les pique-niques",
+          "Un guide du village pour les étapes longues",
+          "Transport pour Inzerki et Imouzzer"
+        ],
+        "pas_pour": [
+          "vous ne marchez pas régulièrement : certaines étapes font plus de 15 km",
+          "vous voulez changer de lieu chaque soir"
+        ]
+      },
+      "en": {
+        "titre": "5 days on foot",
+        "sous_titre": "5 nights. One outing a day",
+        "prix_detail": "per person, all inclusive, based on 2 people",
+        "intro": "Five days of walking from the house, 4 to 6 hours a day, without changing beds. The marked trails can be done alone, the long stages with a guide from the village. You choose each morning.",
+        "jours": [
+          {
+            "titre": "Days 1 and 2",
+            "texte": "The pools by the high trail, then the oasis and its terraced gardens."
+          },
+          {
+            "titre": "Day 3",
+            "texte": "The Imouzzer waterfalls, flowing again since 2026, and the village."
+          },
+          {
+            "titre": "Day 4",
+            "texte": "The Inzerki hives, the largest collective apiary in the world, made of earth and wood. By car then on foot."
+          },
+          {
+            "titre": "Day 5",
+            "texte": "The ridge above the house, the big panorama over the valley. Early start."
+          }
+        ],
+        "inclus": [
+          "5 nights in a room with a view",
+          "All meals and picnics",
+          "A guide from the village for the long stages",
+          "Transport to Inzerki and Imouzzer"
+        ],
+        "pas_pour": [
+          "you do not walk regularly: some days are over 15 km",
+          "you want to change place every night"
+        ]
+      },
+      "de": {
+        "titre": "5 Tage zu Fuß",
+        "sous_titre": "5 Nächte. Täglich eine Tour",
+        "prix_detail": "pro Person, alles inklusive, bei 2 Personen",
+        "intro": "Fünf Wandertage vom Haus aus, 4 bis 6 Stunden täglich, ohne Bettenwechsel. Die markierten Wege geht man allein, die langen Etappen mit einem Guide aus dem Dorf. Entschieden wird jeden Morgen.",
+        "jours": [
+          {
+            "titre": "Tag 1 und 2",
+            "texte": "Die Pools über den oberen Pfad, dann die Oase mit ihren Terrassengärten."
+          },
+          {
+            "titre": "Tag 3",
+            "texte": "Die Wasserfälle von Imouzzer, seit 2026 wieder mit Wasser, und das Dorf."
+          },
+          {
+            "titre": "Tag 4",
+            "texte": "Die Bienenstöcke von Inzerki, der größte gemeinschaftliche Bienenstand der Welt, aus Lehm und Holz. Per Auto, dann zu Fuß."
+          },
+          {
+            "titre": "Tag 5",
+            "texte": "Der Grat über dem Haus, das große Panorama über das Tal. Früher Aufbruch."
+          }
+        ],
+        "inclus": [
+          "5 Nächte im Zimmer mit Aussicht",
+          "Alle Mahlzeiten und Picknicks",
+          "Ein Guide aus dem Dorf für die langen Etappen",
+          "Transport nach Inzerki und Imouzzer"
+        ],
+        "pas_pour": [
+          "Sie nicht regelmäßig wandern: manche Etappen sind über 15 km",
+          "Sie jeden Abend den Ort wechseln möchten"
+        ]
+      }
+    },
+    {
+      "id": "a-plusieurs",
+      "prix_confirme": false,
+      "prix": {
+        "montant": "1 190",
+        "devise": "€"
+      },
+      "fr": {
+        "titre": "4 jours à plusieurs",
+        "sous_titre": "4 nuits. Familles, amis, enfants",
+        "prix_detail": "pour 4 personnes, tout compris",
+        "intro": "Le même accès à la vallée, au rythme du groupe. Les uns partent marcher, les autres restent à la piscine. On se retrouve à table.",
+        "jours": [
+          {
+            "titre": "Chaque matin",
+            "texte": "Une sortie courte : les bassins les plus proches, la palmeraie, les jardins du village. Retour avant la chaleur."
+          },
+          {
+            "titre": "Chaque après-midi",
+            "texte": "Piscine, sieste, et un atelier à la maison : pain cuit au four en terre, thé, visite des ruches."
+          },
+          {
+            "titre": "Un jour sur deux",
+            "texte": "Une vraie randonnée pour ceux qui veulent, avec un guide du village."
+          }
+        ],
+        "inclus": [
+          "4 nuits dans deux chambres communicantes",
+          "Tous les repas, menus adaptés aux enfants",
+          "Sorties avec un guide du village",
+          "Ateliers pain et miel"
+        ],
+        "pas_pour": [
+          "vos enfants ont moins de 3 ans : les sentiers ne se font pas en poussette",
+          "vous cherchez un club enfants"
+        ]
+      },
+      "en": {
+        "titre": "4 days together",
+        "sous_titre": "4 nights. Families, friends, children",
+        "prix_detail": "for 4 people, all inclusive",
+        "intro": "The same access to the valley, at the group's pace. Some go walking, the others stay by the pool. Everyone meets again at the table.",
+        "jours": [
+          {
+            "titre": "Every morning",
+            "texte": "A short outing: the nearest pools, the palm grove, the village gardens. Back before the heat."
+          },
+          {
+            "titre": "Every afternoon",
+            "texte": "Pool, nap, and a workshop at the house: bread in the earth oven, tea, the beehives."
+          },
+          {
+            "titre": "Every other day",
+            "texte": "A real hike for those who want it, with a guide from the village."
+          }
+        ],
+        "inclus": [
+          "4 nights in two connecting rooms",
+          "All meals, child-friendly menus",
+          "Outings with a guide from the village",
+          "Bread and honey workshops"
+        ],
+        "pas_pour": [
+          "your children are under 3: the trails are not for pushchairs",
+          "you are looking for a kids' club"
+        ]
+      },
+      "de": {
+        "titre": "4 Tage gemeinsam",
+        "sous_titre": "4 Nächte. Familien, Freunde, Kinder",
+        "prix_detail": "für 4 Personen, alles inklusive",
+        "intro": "Derselbe Zugang zum Tal, im Tempo der Gruppe. Die einen gehen wandern, die anderen bleiben am Pool. Am Tisch trifft man sich wieder.",
+        "jours": [
+          {
+            "titre": "Jeden Morgen",
+            "texte": "Ein kurzer Ausflug: die nächsten Pools, der Palmenhain, die Gärten des Dorfes. Zurück vor der Hitze."
+          },
+          {
+            "titre": "Jeden Nachmittag",
+            "texte": "Pool, Mittagsschlaf und eine Werkstatt im Haus: Brot aus dem Lehmofen, Tee, die Bienenstöcke."
+          },
+          {
+            "titre": "Jeden zweiten Tag",
+            "texte": "Eine richtige Wanderung für die, die möchten, mit einem Guide aus dem Dorf."
+          }
+        ],
+        "inclus": [
+          "4 Nächte in zwei verbundenen Zimmern",
+          "Alle Mahlzeiten, kindgerechte Menüs",
+          "Ausflüge mit einem Guide aus dem Dorf",
+          "Brot- und Honigwerkstatt"
+        ],
+        "pas_pour": [
+          "Ihre Kinder jünger als 3 sind: die Wege sind nichts für Kinderwagen",
+          "Sie einen Kinderclub suchen"
+        ]
+      }
+    }
+  ]
+}

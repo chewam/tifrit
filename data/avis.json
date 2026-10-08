@@ -1,0 +1,70 @@
+{
+  "_aide": "Sources : mettre la note et le nombre d'avis tels qu'affichés sur chaque plateforme. Une source sans note n'est pas affichée. Extraits : copier des avis réels, dans leur langue d'origine.",
+  "sources": [
+    {
+      "nom": "Google",
+      "note": "",
+      "sur": "/ 5",
+      "nb": 134,
+      "url": "https://www.google.com/maps/search/Maison+d'h%C3%B4tes+Tifrit+Paradise+Valley"
+    },
+    {
+      "nom": "Booking.com",
+      "note": "",
+      "sur": "/ 10",
+      "nb": "",
+      "url": "https://www.booking.com/hotel/ma/tifrit-maison-d-hotes-paradise-valley.html"
+    },
+    {
+      "nom": "Tripadvisor",
+      "note": "",
+      "sur": "/ 5",
+      "nb": "",
+      "url": "https://www.tripadvisor.fr/Hotel_Review-g293731-d2516898-Reviews-Hotel_Tifrit-Agadir_Souss_Massa.html"
+    }
+  ],
+  "extraits": [
+    {
+      "lang": "fr",
+      "auteur": "Germain",
+      "source": "Google",
+      "date": "2024",
+      "texte": "Je connais cet endroit depuis 35 ans, Rachid est devenu un ami, on est bien reçu, l'endroit est calme, et Rachid peut organiser une randonnée et la guider. Produits locaux en cuisine, et excellent petit déjeuner."
+    },
+    {
+      "lang": "fr",
+      "auteur": "Laura",
+      "source": "Google",
+      "date": "2024",
+      "texte": "Maison d'hôtes parfaite pour se ressourcer, bel endroit sans prétention ! Un staff plus que sympathique, nous remercions tous ceux qui ont contribué aux plaisirs de mes enfants. Les repas sont faits sur demande, et de qualité. De belles promenades aux alentours."
+    },
+    {
+      "lang": "de",
+      "auteur": "Julian",
+      "source": "Google",
+      "date": "2024",
+      "texte": "Toller Pool, gute Lage im Valley und super nettes Personal. Ich hatte meine Kopfhörer dort vergessen und sie haben geholfen, sie mir nachkommen zu lassen."
+    },
+    {
+      "lang": "en",
+      "auteur": "Bluemiz",
+      "source": "Google",
+      "date": "2024",
+      "texte": "Good place. Gone there twice. The service is very good and the price is reasonable."
+    },
+    {
+      "lang": "pt",
+      "auteur": "Marco",
+      "source": "Google",
+      "date": "2024",
+      "texte": "Local com decoração típica do lugar, rodeado por natureza linda."
+    },
+    {
+      "lang": "fr",
+      "auteur": "Cendrine",
+      "source": "Google",
+      "date": "2024",
+      "texte": "Personnel très agréable, hôtel très agréable."
+    }
+  ]
+}

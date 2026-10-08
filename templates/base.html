@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+{{hreflangs}}
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/site.css">
+{{jsonld}}
+</head>
+<body class="{{body_class}}">
+<a class="skip" href="#main">{{skip}}</a>
+<nav class="nav" id="nav">
+  <a class="brand" href="{{home}}">{{site_name}}</a>
+  <button class="burger" aria-label="{{menu_label}}" aria-expanded="false" aria-controls="menu">☰</button>
+  <ul class="menu" id="menu">{{nav}}<li class="langs">{{langs}}</li></ul>
+</nav>
+{{hero}}
+<main id="main" class="{{narrow}}">
+  <div class="wrap">
+{{content}}
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div><strong>{{site_name}}</strong><br>{{footer_adresse}}</div>
+    <div>{{footer_contact}}</div>
+    <div>{{footer_links}}</div>
+    <div class="small">© {{year}} {{site_name}}. {{footer_note}}</div>
+  </div>
+</footer>
+<a class="sticky-cta" href="{{wa_url}}" target="_blank" rel="noopener">{{wa_btn}}</a>
+<script src="/js/site.js" defer></script>
+</body>
+</html>

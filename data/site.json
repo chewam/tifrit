@@ -1,0 +1,54 @@
+{
+  "nom": "Maison d'hôtes Tifrit",
+  "url": "https://tifritecolodge.com",
+  "contact": {
+    "telephone": "+212 661 654 231",
+    "whatsapp": "+212 661 654 231",
+    "email": "contact@tifritecolodge.com"
+  },
+  "adresse": {
+    "rue": "Tifrit, Vallée du Paradis",
+    "ville": "Imouzzer Ida Outanane",
+    "region": "Agadir Ida-Outanane",
+    "cp": "80300",
+    "pays": {
+      "fr": "Maroc",
+      "en": "Morocco",
+      "de": "Marokko"
+    }
+  },
+  "geo": {
+    "lat": 30.57839,
+    "lng": -9.53468,
+    "_aide": "Position de la maison d'après OpenStreetMap (restaurant Tifrit, RP1001). À vérifier par Rachid."
+  },
+  "google_business_url": "",
+  "price_range": "€€",
+  "form_action": "",
+  "paiement": [
+    {
+      "fr": "Espèces sur place, en dirhams ou en euros",
+      "en": "Cash on site, in dirhams or euros",
+      "de": "Barzahlung vor Ort, in Dirham oder Euro"
+    },
+    {
+      "fr": "Acompte par virement : nous consulter",
+      "en": "Deposit by bank transfer: ask us",
+      "de": "Anzahlung per Überweisung: auf Anfrage"
+    }
+  ],
+  "reseaux": [
+    {
+      "nom": "Instagram",
+      "url": "https://www.instagram.com/tifrit__paradise_valley"
+    },
+    {
+      "nom": "Facebook",
+      "url": "https://www.facebook.com/HotelTifrit"
+    },
+    {
+      "nom": "Google",
+      "url": "https://www.google.com/maps/search/Maison+d'h%C3%B4tes+Tifrit+Paradise+Valley"
+    }
+  ]
+}

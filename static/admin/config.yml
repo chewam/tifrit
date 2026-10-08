@@ -1,0 +1,78 @@
+# Decap CMS : interface d'édition à /admin/ (hébergement Netlify + Netlify Identity).
+backend:
+  name: git-gateway
+  branch: main
+locale: fr
+media_folder: static/images
+public_folder: /images
+collections:
+  - name: pages_fr
+    label: "Pages (français)"
+    folder: content/fr
+    create: false
+    extension: md
+    fields: &page_fields
+      - {label: Titre, name: title, widget: string}
+      - {label: "Adresse (slug)", name: slug, widget: string, required: false}
+      - {label: "Description (Google)", name: description, widget: string, required: false}
+      - {label: "Phrase sous le titre", name: tagline, widget: string, required: false}
+      - {label: "Photo de couverture (fichier)", name: hero_img, widget: string, required: false}
+      - {label: "Photo de couverture à venir (légende)", name: hero_photo, widget: string, required: false}
+      - {label: Texte, name: body, widget: markdown}
+  - name: pages_en
+    label: "Pages (English)"
+    folder: content/en
+    create: false
+    extension: md
+    fields: *page_fields
+  - name: pages_de
+    label: "Pages (Deutsch)"
+    folder: content/de
+    create: false
+    extension: md
+    fields: *page_fields
+  - name: donnees
+    label: "Prix, contacts, avis, disponibilités"
+    files:
+      - name: dispo
+        label: "Disponibilités"
+        file: data/disponibilites.json
+        fields:
+          - label: "Périodes complètes"
+            name: complet
+            widget: list
+            fields:
+              - {label: Du, name: du, widget: string, hint: "AAAA-MM-JJ"}
+              - {label: Au, name: au, widget: string, hint: "AAAA-MM-JJ"}
+      - name: sejours
+        label: "Séjours et prix"
+        file: data/sejours.json
+        fields:
+          - label: Formules
+            name: formules
+            widget: list
+            fields:
+              - {label: Identifiant, name: id, widget: string}
+              - {label: "Formule phare", name: phare, widget: boolean, required: false}
+              - {label: "Prix confirmé", name: prix_confirme, widget: boolean}
+              - label: Prix
+                name: prix
+                widget: object
+                fields:
+                  - {label: Montant, name: montant, widget: string}
+                  - {label: Devise, name: devise, widget: string}
+              - {label: "Textes (fr/en/de)", name: fr, widget: object, fields: [{label: Titre, name: titre, widget: string}], collapsed: true}
+      - name: site
+        label: "Contacts et paiement"
+        file: data/site.json
+        fields:
+          - {label: Nom, name: nom, widget: string}
+          - {label: URL du site, name: url, widget: string}
+          - label: Contact
+            name: contact
+            widget: object
+            fields:
+              - {label: Téléphone, name: telephone, widget: string}
+              - {label: WhatsApp, name: whatsapp, widget: string}
+              - {label: E-mail, name: email, widget: string}
+          - {label: "Fiche Google Business (URL)", name: google_business_url, widget: string, required: false}

@@ -1,0 +1,4 @@
+{
+  "_aide": "Périodes où la maison est complète, au format AAAA-MM-JJ. Exemple : {\"du\": \"2026-12-20\", \"au\": \"2027-01-03\"}",
+  "complet": []
+}

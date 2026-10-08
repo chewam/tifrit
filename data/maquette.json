@@ -1,0 +1,138 @@
+{
+ "_aide": "Photos d'illustration temporaires, pour visualiser le rendu. Ne pas publier. Mettre actif à false pour revenir aux emplacements vides, ou supprimer une entrée. Chaque entrée associe un fichier de static/images à un bout de la légende de l'emplacement {{photo: ...}}, par langue.",
+ "actif": true,
+ "hero": {
+  "index": "mock-hero.jpg"
+ },
+ "images": {
+  "mock-apiculteur.jpg": {
+   "fr": "apiculteur et une ruche",
+   "en": "beekeeper and an open hive",
+   "de": "Imker und ein offener"
+  },
+  "mock-tajine.jpg": {
+   "fr": "tajine sur le feu",
+   "en": "tagine on the fire",
+   "de": "Tajine auf dem Feuer"
+  },
+  "mock-sentier-oasis.jpg": {
+   "fr": "sentier vers l'oasis",
+   "en": "trail to the oasis",
+   "de": "Weg zur Oase"
+  },
+  "mock-marche.jpg": {
+   "fr": "marché d'Imouzzer",
+   "en": "Imouzzer market",
+   "de": "Markt in Imouzzer"
+  },
+  "mock-bassins.jpg": {
+   "fr": "bassins pleins, 2026",
+   "en": "pools full, 2026",
+   "de": "vollen Pools, 2026"
+  },
+  "mock-cascade.jpg": {
+   "fr": "cascade d'Imouzzer en eau, 2026",
+   "en": "Imouzzer waterfall flowing, 2026",
+   "de": "Wasserfall von Imouzzer mit Wasser, 2026"
+  },
+  "mock-cascade-2026.jpg": {
+   "fr": "cascades d'Imouzzer en eau, avec la date",
+   "en": "waterfalls flowing, with the date",
+   "de": "Wasserfälle von Imouzzer mit Wasser, mit Datum"
+  },
+  "mock-bassins-2026.jpg": {
+   "fr": "bassins pleins, avec la date",
+   "en": "pools full, with the date",
+   "de": "vollen Pools, mit Datum"
+  },
+  "mock-terrasse-soir.jpg": {
+   "fr": "terrasse le soir, table mise",
+   "en": "terrace in the evening, table set",
+   "de": "Terrasse am Abend, gedeckter"
+  },
+  "mock-vallee-ciel.jpg": {
+   "fr": "vues du ciel",
+   "en": "from the air",
+   "de": "aus der Luft"
+  },
+  "mock-terrasse-lampes.jpg": {
+   "fr": "lampes allumées",
+   "en": "lamps lit",
+   "de": "Lampen an"
+  },
+  "mock-table-commune.jpg": {
+   "fr": "table commune",
+   "en": "shared table",
+   "de": "gemeinsame Tisch"
+  },
+  "mock-cheminee.jpg": {
+   "fr": "cheminée allumée",
+   "en": "fireplace lit",
+   "de": "Kamin brennt"
+  },
+  "mock-petit-dejeuner.jpg": {
+   "fr": "petit-déjeuner, miel",
+   "en": "Breakfast, honey",
+   "de": "Frühstück, Honig"
+  },
+  "mock-pise.jpg": {
+   "fr": "mur de pisé",
+   "en": "rammed-earth wall up close",
+   "de": "Stampflehmwand aus der Nähe"
+  },
+  "mock-chambre.jpg": {
+   "fr": "chambre refaite",
+   "en": "refreshed room",
+   "de": "renoviertes Zimmer"
+  },
+  "mock-terrasse-privee.jpg": {
+   "fr": "terrasse privée",
+   "en": "private terrace",
+   "de": "private Terrasse"
+  },
+  "mock-salle-de-bain.jpg": {
+   "fr": "Salle de bain",
+   "en": "Bathroom",
+   "de": "Badezimmer"
+  },
+  "mock-argan.jpg": {
+   "fr": "coopérative d'argan",
+   "en": "argan cooperative",
+   "de": "Argan-Kooperative"
+  },
+  "mock-bassins-home.jpg": {
+   "fr": "piscines naturelles de la vallée",
+   "en": "natural pools of Paradise Valley",
+   "de": "Naturpools des Paradise Valley"
+  },
+  "mock-marcheurs.jpg": {
+   "fr": "Marcheurs sur le sentier",
+   "en": "Walkers on the marked trail",
+   "de": "Wanderer auf dem markierten"
+  }
+ },
+ "sources": {
+  "mock-hero.jpg": "les-tresors-du-maroc.fr (Pexels 28200419)",
+  "mock-apiculteur.jpg": "ruchetadla.ma",
+  "mock-tajine.jpg": "freepik.com (premium, filigrane possible)",
+  "mock-sentier-oasis.jpg": "tourisme-vouille.fr",
+  "mock-marche.jpg": "unsplash.com/@hembris",
+  "mock-bassins.jpg": "unsacsurledos.com",
+  "mock-cascade.jpg": "visitruralmorocco.com",
+  "mock-cascade-2026.jpg": "fr.le360.ma (article sur le retour des cascades)",
+  "mock-bassins-2026.jpg": "bonjouridee.com",
+  "mock-terrasse-soir.jpg": "pinterest",
+  "mock-vallee-ciel.jpg": "visitruralmorocco.com",
+  "mock-terrasse-lampes.jpg": "marocdesmerveilles.com",
+  "mock-table-commune.jpg": "theatlastrail.com",
+  "mock-cheminee.jpg": "shopify (salon berbère)",
+  "mock-petit-dejeuner.jpg": "pinterest",
+  "mock-pise.jpg": "amaco.org",
+  "mock-chambre.jpg": "Touda écolodge (website-files.com)",
+  "mock-terrasse-privee.jpg": "o-maroc.com",
+  "mock-salle-de-bain.jpg": "maison-monde.com",
+  "mock-argan.jpg": "top10marrakech.com",
+  "mock-marcheurs.jpg": "unsplash.com/@eddjourney",
+  "mock-bassins-home.jpg": "bonjouridee.com (même photo que mock-bassins-2026)"
+ }
+}
