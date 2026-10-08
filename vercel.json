@@ -65,11 +65,6 @@
       "permanent": true
     },
     {
-      "source": "/rooms/:path*",
-      "destination": "/en/house/",
-      "permanent": true
-    },
-    {
       "source": "/restaurant",
       "destination": "/en/stays/",
       "permanent": true
@@ -97,11 +92,6 @@
     {
       "source": "/contact/",
       "destination": "/en/book/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/:path*",
-      "destination": "/en/valley/",
       "permanent": true
     },
     {
@@ -135,17 +125,52 @@
       "permanent": true
     },
     {
-      "source": "/fr/journal/:path*",
-      "destination": "/fr/vallee/",
+      "source": "/rooms",
+      "destination": "/en/house/",
       "permanent": true
     },
     {
-      "source": "/en/journal/:path*",
+      "source": "/rooms/(.*)",
+      "destination": "/en/house/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
       "destination": "/en/valley/",
       "permanent": true
     },
     {
-      "source": "/de/journal/:path*",
+      "source": "/blog/(.*)",
+      "destination": "/en/valley/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/journal",
+      "destination": "/fr/vallee/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/journal/(.*)",
+      "destination": "/fr/vallee/",
+      "permanent": true
+    },
+    {
+      "source": "/en/journal",
+      "destination": "/en/valley/",
+      "permanent": true
+    },
+    {
+      "source": "/en/journal/(.*)",
+      "destination": "/en/valley/",
+      "permanent": true
+    },
+    {
+      "source": "/de/journal",
+      "destination": "/de/tal/",
+      "permanent": true
+    },
+    {
+      "source": "/de/journal/(.*)",
       "destination": "/de/tal/",
       "permanent": true
     }

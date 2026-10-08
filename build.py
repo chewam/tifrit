@@ -21,9 +21,10 @@ try:
     from PIL import Image
 except ImportError:
     Image = None
-_dims = {}
+_dimfile = ROOT / "data/dimensions.json"
+_dims = json.loads(_dimfile.read_text()) if _dimfile.exists() else {}
 def dims(name):
-    if name in _dims: return _dims[name]
+    if name in _dims: return tuple(_dims[name])
     p = ROOT / "static/images" / name
     d = None
     if Image and p.exists():
