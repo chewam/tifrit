@@ -255,8 +255,7 @@ input:focus,textarea:focus,select:focus{outline:2px solid var(--water);outline-o
 .legend{font-size:.8rem;color:var(--muted)}.legend i{display:inline-block;width:12px;height:12px;background:var(--accent);border-radius:3px;vertical-align:middle;margin-right:.3rem}
 
 /* bandeau réserver + pied de page */
-.band{margin:0 var(--gutter) 3rem;max-width:var(--max)}
-@media (min-width:1345px){.band{margin-left:auto;margin-right:auto}}
+.band{max-width:var(--max);margin:0 auto 3rem;padding:0 var(--gutter)}
 .band div{background:var(--accent);color:var(--bg);border-radius:var(--r-l);padding:clamp(2rem,4vw,3.5rem);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.6rem}
 .band h2{margin:0 0 .5rem;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;max-width:22ch}
 .band p{margin:0;color:#f6dccb;font-size:1.02rem}
@@ -309,7 +308,7 @@ figure.scene{margin:0}
 .split{margin:2.5rem 0}.phare-panel .text{gap:1.1rem}.phare-panel ol{display:none}
 main>.wrap>.ph,main>.wrap>.mock{aspect-ratio:4/3}
 .jours{grid-template-columns:1fr}.jours strong{padding-bottom:0;border:0}.jours li>span{padding-top:.2rem}
-.band{margin:0 var(--gutter) 2rem}.band .btns{width:100%}.band .btn{flex:1}
+.band{margin-bottom:2rem}.band .btns{width:100%}.band .btn{flex:1}
 footer.site .wrap{grid-template-columns:1fr 1fr}footer.site{padding-bottom:7rem}
 .sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(248,246,241,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);justify-content:space-between;align-items:center;gap:.8rem;padding:.6rem var(--gutter);text-decoration:none;color:var(--ink)}
 .sticky-cta span{display:grid;line-height:1.3}.sticky-cta small{font-size:.78rem;color:var(--muted)}.sticky-cta b{font-weight:600;font-size:.95rem}
