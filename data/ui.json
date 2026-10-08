@@ -119,7 +119,8 @@
     "enfant": "enfant",
     "enfants": "enfants",
     "direct": "Ou directement :",
-    "confort_label": "Le confort"
+    "confort_label": "Le confort",
+    "hero_badge_short": "Hiver 2026 : l'eau est revenue."
   },
   "en": {
     "nav": {
@@ -241,7 +242,8 @@
     "enfant": "child",
     "enfants": "children",
     "direct": "Or directly:",
-    "confort_label": "Comfort"
+    "confort_label": "Comfort",
+    "hero_badge_short": "Winter 2026: the water is back."
   },
   "de": {
     "nav": {
@@ -363,6 +365,7 @@
     "enfant": "Kind",
     "enfants": "Kinder",
     "direct": "Oder direkt:",
-    "confort_label": "Komfort"
+    "confort_label": "Komfort",
+    "hero_badge_short": "Winter 2026: das Wasser ist zurück."
   }
 }

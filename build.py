@@ -388,7 +388,7 @@ def render_page(page):
     if meta.get("hero_img"):
         strip = "".join(f"<span>{inline(x)}</span>" for x in ui.get("strip", [])) if page["key"] == "index" else ""
         strip_html = f'<div class="strip">{strip}</div>' if strip else ""
-        badge = f'<span class="badge">{inline(ui["hero_badge"])}</span>' if page["key"] == "index" and ui.get("hero_badge") else ""
+        badge = f'<span class="badge"><span class="long">{inline(ui["hero_badge"])}</span><span class="short">{inline(ui.get("hero_badge_short", ui["hero_badge"]))}</span></span>' if page["key"] == "index" and ui.get("hero_badge") else ""
         g = next((x for x in AVIS["sources"] if x.get("note") and x["nom"].lower().startswith("google")), None)
         rating = f'<div class="rating"><i>{ICONS["star"]*5}</i><span><strong>{g["note"]} {g["sur"]}</strong> {ui["rating_on"]}</span></div>' if g and page["key"] == "index" else ""
         hero = f'<header class="hero"><div class="hero-media{" mock" if meta.get("hero_mock") else ""}" data-badge="{ui["mock_badge"]}">{picture(meta["hero_img"], meta.get("hero_alt",""), sizes="100vw", lazy=False)}</div><div class="wrap">{badge}<h1>{inline(meta["title"])}</h1><div class="hero-side">{tag}{cta}{rating}</div></div>{strip_html}</header>'
