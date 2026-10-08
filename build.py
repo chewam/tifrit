@@ -89,10 +89,13 @@ ICONS = {
 def phare():
     return next((s for s in SEJOURS["formules"] if s.get("phare")), SEJOURS["formules"][0])
 
+NBSP = "\u00a0"
+
 def prix_html(s, lang, cls="prix", note=True):
     ui = UI[lang]; t = s[lang]; prix = s["prix"]
     badge = "" if s.get("prix_confirme") or not note else f' <span class="todo">{ui["prix_indicatif"]}</span>'
-    return f'<div class="{cls}"><strong>{prix["montant"]} {prix["devise"]}</strong><span>{inline(t["prix_detail"])}</span>{badge}</div>'
+    montant = prix["montant"].replace(" ", NBSP) + NBSP + prix["devise"]
+    return f'<div class="{cls}"><strong>{montant}</strong><span>{inline(t["prix_detail"])}</span>{badge}</div>'
 
 def render_confort(lang):
     ui = UI[lang]
@@ -121,9 +124,9 @@ def render_sejours(lang):
         t = s[lang]; ph = s.get("phare")
         tag = f'<span class="tag">{ui["compare_tag"]}</span>' if ph else ""
         cls = ' class="phare"' if ph else ""
-        out.append(f'<a href="#{s["id"]}"{cls}><div class="head"><small>{inline(t["sous_titre"])}</small>{tag}</div><h3>{inline(t["titre"])}</h3>{prix_html(s, lang, note=False)}<p>{inline(t["intro"].split(". ")[0])}.</p></a>')
+        out.append(f'<a href="#{s["id"]}"{cls}><span class="tag-row">{tag}</span><small>{inline(t["sous_titre"])}</small><h3>{inline(t["titre"])}</h3>{prix_html(s, lang, note=False)}<p>{inline(t["intro"].split(". ")[0])}.</p></a>')
     n = SEJOURS["nuit_seule"]; tn = n[lang]
-    out.append(f'<a href="#nuit" class="nuit-c"><small>{ui["nuit_eyebrow"]}</small><h3>{inline(tn["titre"])}</h3>{prix_html(n, lang, note=False)}<p>{inline(tn["texte"].split(". ")[0])}.</p></a>')
+    out.append(f'<a href="#nuit" class="nuit-c"><span class="tag-row"></span><small>{ui["nuit_eyebrow"]}</small><h3>{inline(tn["titre"])}</h3>{prix_html(n, lang, note=False)}<p>{inline(tn["texte"].split(". ")[0])}.</p></a>')
     out.append(f'</div><p class="compare-note">{ui["compare_note"]}</p><div class="sejours">')
     for s in SEJOURS["formules"]:
         t = s[lang]
