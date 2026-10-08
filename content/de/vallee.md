@@ -50,7 +50,7 @@ Hier spricht man Taschelhit, die Amazigh-Sprache des Souss. Der Arganbaum wächs
 
 ## Abseits der Menge
 
-Die Naturpools des Paradise Valley empfangen gegen 11 Uhr die Busse aus Agadir. Vom Haus aus geht man früh über den markierten Weg und bricht auf, wenn die anderen kommen. Die andere Runde, zur Oase, sieht fast niemanden: drei bis vier Stunden zu Fuß, der Palmenhain, der Kalkhang, die Terrassengärten, Tee bei einer Familie.
+Die Naturpools des Paradise Valley empfangen gegen 11 Uhr die Busse aus Agadir. Vom Haus aus geht man früh über den markierten Weg und bricht auf, wenn die anderen kommen. Die andere Runde, zur Oase, sieht fast niemanden: drei bis vier Stunden zu Fuß, der Palmenhain, der Kalkhang, die Terrassengärten, Tee bei Dorfbewohnern.
 
 ## Wandern, ohne zu schaden
 

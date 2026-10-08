@@ -50,7 +50,7 @@ People here speak Tashelhit, the Amazigh language of the Souss. The argan tree g
 
 ## Away from the crowds
 
-The natural pools of Paradise Valley receive buses from Agadir around 11 am. From the house, you go early by the marked trail and leave when the others arrive. The other loop, to the oasis, sees almost nobody: three to four hours of walking, the palm grove, the limestone slope, the terraced gardens, tea with a local family.
+The natural pools of Paradise Valley receive buses from Agadir around 11 am. From the house, you go early by the marked trail and leave when the others arrive. The other loop, to the oasis, sees almost nobody: three to four hours of walking, the palm grove, the limestone slope, the terraced gardens, tea at a villager's home.
 
 ## Walking without damage
 
