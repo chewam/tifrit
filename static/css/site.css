@@ -167,9 +167,10 @@ blockquote p{margin:0}
 .compare a{display:flex;flex-direction:column;gap:.7rem;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.6rem;text-decoration:none;position:relative;transition:border-color .2s}
 .compare a:hover{border-color:var(--ink)}
 .compare a.phare{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.compare .tag{position:absolute;top:1.1rem;right:1.1rem;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;background:var(--accent-light);color:var(--ink);padding:.3rem .6rem;border-radius:999px}
+.compare .head{display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap}
+.compare .tag{font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;background:var(--accent-light);color:var(--ink);padding:.3rem .6rem;border-radius:999px}
 .compare small{font-size:.82rem;color:var(--muted)}.compare a.phare small{color:var(--dark-text)}
-.compare h3{margin:0;font-size:1.6rem;padding-right:5rem}
+.compare h3{margin:0;font-size:1.6rem}
 .compare .prix{text-align:left}.compare .prix strong{font-size:2.2rem;display:inline;margin-right:.4rem;color:inherit}.compare .prix span{display:inline;font-size:.82rem;max-width:none;margin:0}
 .compare a.phare .prix span{color:var(--dark-muted)}
 .compare p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.5}.compare a.phare p{color:var(--dark-text)}
