@@ -50,8 +50,8 @@ Six rooms, all with a view over the valley. Air conditioning, private bathroom, 
 {{id: hotes}}
 ## The hosts
 
-Rachid and his family run the house. The rammed-earth walls are the grandfather's. In the evening the table is shared, open to anyone who wants to sit down, and free for those who prefer their terrace. Each morning an outing is offered, never imposed: you leave with someone from the village, or stay by the water. Tashelhit, Arabic and French are spoken here.
+Rachid and his family run the house. The rammed-earth walls are the grandfather's. In the evening the table is shared, open to anyone who wants to sit down, and free for those who prefer their terrace. Tashelhit, Arabic and French are spoken here.
 
-{{photo: The shared table, one evening}}
+{{photo: The terrace in the evening, table set}}
 
 {{cta: /en/stays/ | Choose your stay}}

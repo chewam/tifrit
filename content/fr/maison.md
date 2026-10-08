@@ -50,8 +50,8 @@ Six chambres, toutes avec vue sur la vallée. Climatisation, salle de bain priv�
 {{id: hotes}}
 ## Les hôtes
 
-Rachid et sa famille tiennent la maison. Les murs en pisé sont ceux du grand-père. Le soir, la table est commune, ouverte à qui veut s'y asseoir, et libre à qui préfère sa terrasse. Chaque matin, une sortie est proposée, jamais imposée : on part avec quelqu'un du village, ou on reste au bord de l'eau. On y parle tachelhit, arabe et français.
+Rachid et sa famille tiennent la maison. Les murs en pisé sont ceux du grand-père. Le soir, la table est commune, ouverte à qui veut s'y asseoir, et libre à qui préfère sa terrasse. On y parle tachelhit, arabe et français.
 
-{{photo: La table commune, un soir}}
+{{photo: La terrasse le soir, table mise}}
 
 {{cta: /fr/sejours/ | Choisir son séjour}}

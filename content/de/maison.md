@@ -50,8 +50,8 @@ Sechs Zimmer, alle mit Blick ins Tal. Klimaanlage, eigenes Bad, WLAN, Handtüche
 {{id: hotes}}
 ## Die Gastgeber
 
-Rachid und seine Familie führen das Haus. Die Stampflehmwände sind die des Großvaters. Abends ist der Tisch gemeinsam, offen für alle, die sich dazusetzen möchten, und frei für alle, die ihre Terrasse vorziehen. Jeden Morgen wird ein Ausflug angeboten, nie vorgeschrieben: man geht mit jemandem aus dem Dorf los oder bleibt am Wasser. Man spricht hier Taschelhit, Arabisch und Französisch.
+Rachid und seine Familie führen das Haus. Die Stampflehmwände sind die des Großvaters. Abends ist der Tisch gemeinsam, offen für alle, die sich dazusetzen möchten, und frei für alle, die ihre Terrasse vorziehen. Man spricht hier Taschelhit, Arabisch und Französisch.
 
-{{photo: Der gemeinsame Tisch, an einem Abend}}
+{{photo: Die Terrasse am Abend, gedeckter Tisch}}
 
 {{cta: /de/aufenthalte/ | Aufenthalt wählen}}
