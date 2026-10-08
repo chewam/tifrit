@@ -39,7 +39,7 @@ Direktflüge nach Agadir-Al Massira aus Frankfurt, Düsseldorf und vielen andere
 
 ## Vom Flughafen oder aus Agadir zum Haus
 
-- **Der Shuttle des Hauses.** Auf Anfrage, zusammen mit dem Aufenthalt zu buchen. Rachid oder ein Fahrer aus dem Dorf wartet am Flughafen oder an Ihrem Hotel in Agadir. Preis auf Anfrage.
+- **Der Shuttle des Hauses.** Auf Anfrage, zusammen mit dem Aufenthalt zu buchen. Ein Fahrer aus dem Dorf wartet am Flughafen oder an Ihrem Hotel in Agadir. Preis auf Anfrage.
 - **Mit dem Taxi.** Nach „Tifrit, Paradise Valley, Straße nach Imouzzer“ fragen. Den Preis vor der Abfahrt vereinbaren.
 - **Mit dem Mietwagen.** Die Vermieter sind am Flughafen. Von Agadir die Straße nach Aourir (N1 Richtung Norden), in Aourir Richtung Imouzzer Ida Outanane abbiegen. Durch das Dorf Alma, dann den Schildern „Paradise Valley“ folgen. Das Haus liegt an der Straße, hinter den Pools. Kostenlose Parkplätze vor dem Haus.
 - **Mit dem Bus.** Busse und Sammeltaxis verbinden Agadir mit Imouzzer. Sagen Sie uns Ihre Ankunftszeit, wir holen Sie in Imouzzer oder an den Pools ab.

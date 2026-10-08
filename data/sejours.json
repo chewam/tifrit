@@ -35,7 +35,7 @@
         "titre": "3 jours à Tifrit",
         "sous_titre": "3 nuits. Tous les repas",
         "prix_detail": "par personne, tout compris, en chambre pour deux",
-        "intro": "Trois jours pour entrer dans la vallée avec les gens qui y vivent. Chaque journée est proposée, aucune n'est obligatoire. On peut la sauter et rester au bord de l'eau.",
+        "intro": "Trois jours pour entrer dans la vallée : les bassins avant les bus, l'oasis, le miel, le marché. Chaque journée est proposée, aucune n'est obligatoire. On peut la sauter et rester au bord de l'eau.",
         "jours": [
           {
             "titre": "Jour 1. Arriver",
@@ -71,7 +71,7 @@
         "titre": "3 days at Tifrit",
         "sous_titre": "3 nights. All meals",
         "prix_detail": "per person, all inclusive, sharing a double room",
-        "intro": "Three days to enter the valley with the people who live there. Every day is offered, none is compulsory. You can skip it and stay by the water.",
+        "intro": "Three days to enter the valley: the pools before the buses, the oasis, the honey, the market. Every day is offered, none is compulsory. You can skip it and stay by the water.",
         "jours": [
           {
             "titre": "Day 1. Arrive",
@@ -83,7 +83,7 @@
           },
           {
             "titre": "Day 3. The oasis and the honey",
-            "texte": "Up to the oasis with someone from the village, visit to the beekeeper, lunch with a local family. On Thursdays, Imouzzer market."
+            "texte": "Up to the oasis with someone from the village, visit to the beekeeper, lunch at a villager's home. On Thursdays, Imouzzer market."
           },
           {
             "titre": "Day 4. Leave",
@@ -107,7 +107,7 @@
         "titre": "3 Tage in Tifrit",
         "sous_titre": "3 Nächte. Alle Mahlzeiten",
         "prix_detail": "pro Person, alles inklusive, im Doppelzimmer",
-        "intro": "Drei Tage, um mit den Menschen, die hier leben, ins Tal einzutauchen. Jeder Tag ist ein Angebot, keiner ist Pflicht. Man kann ihn auslassen und am Wasser bleiben.",
+        "intro": "Drei Tage, um ins Tal einzutauchen: die Pools vor den Bussen, die Oase, der Honig, der Markt. Jeder Tag ist ein Angebot, keiner ist Pflicht. Man kann ihn auslassen und am Wasser bleiben.",
         "jours": [
           {
             "titre": "Tag 1. Ankommen",
@@ -119,7 +119,7 @@
           },
           {
             "titre": "Tag 3. Die Oase und der Honig",
-            "texte": "Aufstieg zur Oase mit jemandem aus dem Dorf, Besuch beim Imker, Mittagessen bei einer Familie. Donnerstags: Markt in Imouzzer."
+            "texte": "Aufstieg zur Oase mit jemandem aus dem Dorf, Besuch beim Imker, Mittagessen bei Dorfbewohnern. Donnerstags: Markt in Imouzzer."
           },
           {
             "titre": "Tag 4. Abreise",

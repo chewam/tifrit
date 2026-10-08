@@ -1,6 +1,6 @@
 ---
 title: Das Paradise Valley, *abseits der Menge*
-tagline: Ein Haus im Palmenhain, 640 m über dem Tal. Und die Menschen, die es zeigen.
+tagline: Ein Haus im Palmenhain, 640 m über dem Tal. Die Wege beginnen an der Tür.
 description: Maison d'hôtes Tifrit, Unterkunft im Paradise Valley bei Agadir (Imouzzer Ida Outanane, Marokko). Aufenthalte von 3 bis 5 Tagen, Naturpools, Imkerei, Küche des Dorfes. 40 Minuten von Agadir, abseits der Menge.
 hero_img: hero-piscine.jpg
 hero_alt: Der Pool der Maison d'hôtes Tifrit im Palmenhain, mit Blick auf den Berg
@@ -16,7 +16,7 @@ Mit dem Imker des Tals, zwischen Thymian und Wolfsmilch. Man probiert vor Ort un
 Abends in der Küche des Hauses, mit allen, die es lernen wollen. Danach isst man am gemeinsamen Tisch.
 
 ### Zur Oase hinaufgehen
-Über den markierten Weg vom Haus aus, mit jemandem aus dem Dorf. Terrassengärten, Tee bei einer Familie.
+Über den markierten Weg vom Haus aus, mit jemandem aus dem Dorf. Terrassengärten, Tee bei Dorfbewohnern.
 
 ### Zum Markt nach Imouzzer
 Donnerstags. Gemüse, Honig, Arganöl und die Menschen, die sie herstellen.
@@ -62,8 +62,8 @@ Dieselben Landschaften wie im Paradise Valley, ohne die Tagesbesucher. Die marki
 
 ## Die Gastgeber
 
-Das Haus gehört Rachids Familie. Der Großvater baute die Stampflehmwände, die Eltern öffneten die Zimmer, Rachid führt und kocht. Abends ist der Tisch gemeinsam und offen für alle, die sich dazusetzen möchten. [Die Gastgeber kennenlernen](/de/haus/#hotes).
+Rachid und seine Familie führen das Haus. Die Stampflehmwände sind die des Großvaters. Abends ist der Tisch gemeinsam, offen für alle, die sich dazusetzen möchten, und frei für alle, die ihre Terrasse vorziehen. [Die Gastgeber](/de/haus/#hotes).
 
-> Toller Pool, gute Lage im Valley und super nettes Personal.
+> Der Ort ist magisch, umgeben von Bergen und Natur. Die Zimmer waren sauber und bequem, der Pool ein echtes Plus.
 
-Julian, Google-Bewertung. [Alle Bewertungen lesen](/de/bewertungen/).
+Booking-Bewertung (übersetzt). [Alle Bewertungen lesen](/de/bewertungen/).

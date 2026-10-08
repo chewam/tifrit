@@ -30,7 +30,7 @@ Every morning, an outing is offered. You leave at dawn with a guide from the vil
 
 ## Rammed earth, the spring, the sun
 
-The walls are rammed earth: soil from the land, compacted layer by layer. Rachid's grandfather built them. They are thick, cool in summer, and hold the warmth of the fireplace in winter. The pool is filled by the valley spring, not by the mains. Hot water in the rooms comes from solar heaters on the roof.
+The walls are rammed earth: soil from the land, compacted layer by layer. The grandfather built them. They are thick, cool in summer, and hold the warmth of the fireplace in winter. The pool is filled by the valley spring, not by the mains. Hot water in the rooms comes from solar heaters on the roof.
 
 {{photo: A rammed-earth wall up close, morning light}}
 
@@ -50,10 +50,8 @@ Six rooms, all with a view over the valley. Air conditioning, private bathroom, 
 {{id: hotes}}
 ## The hosts
 
-The house belongs to Rachid's family. The grandfather built the rammed-earth walls. The parents opened the first rooms to travellers coming up the valley. Rachid grew up here, between the palm grove and the pools.
+Rachid and his family run the house. The rammed-earth walls are the grandfather's. In the evening the table is shared, open to anyone who wants to sit down, and free for those who prefer their terrace. Each morning an outing is offered, never imposed: you leave with someone from the village, or stay by the water. Tashelhit, Arabic and French are spoken here.
 
-Today he is the one who welcomes you, guides the outings and cooks. He knows the beekeeper, the baker and the market day. Some guests have been coming back for thirty-five years. At the house, people speak Tashelhit, the Amazigh language of the Souss, as well as Arabic and French.
-
-{{photo: Rachid and the family at the table, or in front of the house}}
+{{photo: The shared table, one evening}}
 
 {{cta: /en/stays/ | Choose your stay}}

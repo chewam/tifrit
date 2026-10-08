@@ -39,7 +39,7 @@ Direct three-hour flights to Agadir-Al Massira from Paris, Lyon and Nantes, and 
 
 ## From the airport or Agadir to the house
 
-- **The house shuttle.** On request, to book with your stay. Rachid or a driver from the village waits for you at the airport or at your hotel in Agadir. Price on request.
+- **The house shuttle.** On request, to book with your stay. A driver from the village waits for you at the airport or at your hotel in Agadir. Price on request.
 - **By taxi.** Ask for "Tifrit, Paradise Valley, Imouzzer road". Agree on the price before leaving.
 - **By rental car.** Rental companies are at the airport. From Agadir, take the Aourir road (N1 northbound), then at Aourir turn towards Imouzzer Ida Outanane. Pass the village of Alma, follow the "Paradise Valley" signs. The house is by the road, after the pools. Free parking in front of the house.
 - **By bus.** Buses and shared taxis link Agadir to Imouzzer. Tell us your arrival time, we come and pick you up in Imouzzer or at the pools.

@@ -1,6 +1,6 @@
 ---
 title: La vallée du Paradis, *loin des foules*
-tagline: Une maison dans la palmeraie, à 640 m au-dessus de la vallée. Et les gens qui la font visiter.
+tagline: Une maison dans la palmeraie, à 640 m au-dessus de la vallée. Les sentiers partent de la porte.
 description: Maison d'hôtes Tifrit, vallée du Paradis (Imouzzer Ida Outanane, Maroc). Séjours de 3 à 5 jours, piscines naturelles, apiculture, cuisine du village. À 40 minutes d'Agadir, loin des foules.
 hero_img: hero-piscine.jpg
 hero_alt: La piscine de la Maison d'hôtes Tifrit dans la palmeraie, face à la montagne
@@ -62,8 +62,8 @@ Les mêmes paysages que la vallée du Paradis, sans ses visiteurs à la journée
 
 ## Les hôtes
 
-La maison est celle de la famille de Rachid. Le grand-père a monté les murs en pisé, les parents ont ouvert les chambres, Rachid guide et cuisine. Le soir, la table est commune et ouverte à qui veut s'y asseoir. [Faire connaissance avec les hôtes](/fr/maison/#hotes).
+Rachid et sa famille tiennent la maison. Les murs en pisé sont ceux du grand-père. Le soir, la table est commune, ouverte à qui veut s'y asseoir, et libre à qui préfère sa terrasse. [Les hôtes](/fr/maison/#hotes).
 
-> Je connais cet endroit depuis 35 ans, Rachid est devenu un ami. L'endroit est calme, et Rachid peut organiser une randonnée et la guider. Produits locaux en cuisine, et excellent petit-déjeuner.
+> L'endroit est magique, entouré de montagnes et de nature. Les chambres étaient propres et confortables, la piscine un vrai plus.
 
-Germain, avis Google. [Lire tous les avis](/fr/avis/).
+Avis Booking. [Lire tous les avis](/fr/avis/).

@@ -1,6 +1,6 @@
 ---
 title: Paradise Valley, *away from the crowds*
-tagline: A house in the palm grove, 640 m above the valley. And the people who show it to you.
+tagline: A house in the palm grove, 640 m above the valley. The trails start at the door.
 description: Maison d'hôtes Tifrit, Paradise Valley accommodation (Imouzzer Ida Outanane, Morocco). 3 to 5 day stays, natural pools, beekeeping, village cooking. 40 minutes from Agadir, away from the crowds.
 hero_img: hero-piscine.jpg
 hero_alt: The pool of Maison d'hôtes Tifrit in the palm grove, facing the mountain
@@ -16,7 +16,7 @@ With the valley's beekeeper, among thyme and euphorbia. You taste on the spot an
 In the evening, in the house kitchen, with those who want to learn. Then everyone eats at the shared table.
 
 ### Walk up to the oasis
-On the marked trail from the house, with someone from the village. Terraced gardens, tea with a local family.
+On the marked trail from the house, with someone from the village. Terraced gardens, tea at a villager's home.
 
 ### Go to Imouzzer market
 On Thursdays. Vegetables, honey, argan oil and the people who make them.
@@ -62,8 +62,8 @@ The same landscapes as Paradise Valley, without its day visitors. The marked tra
 
 ## The hosts
 
-The house belongs to Rachid's family. The grandfather built the rammed-earth walls, the parents opened the rooms, Rachid guides and cooks. In the evening the table is shared and open to anyone who wants to sit down. [Meet the hosts](/en/house/#hotes).
+Rachid and his family run the house. The rammed-earth walls are the grandfather's. In the evening the table is shared, open to anyone who wants to sit down, and free for those who prefer their terrace. [The hosts](/en/house/#hotes).
 
-> I have known this place for 35 years, Rachid has become a friend. It is quiet, and Rachid can organise a hike and guide it. Local produce in the kitchen, and an excellent breakfast.
+> The place is magical, surrounded by mountains and nature. The rooms were clean and comfortable, the pool a real plus.
 
-Germain, Google review (translated). [Read all reviews](/en/reviews/).
+Booking review (translated). [Read all reviews](/en/reviews/).

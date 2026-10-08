@@ -30,7 +30,7 @@ Chaque matin, une sortie est proposée. Vous partez à l'aube avec un guide du v
 
 ## Le pisé, la source, le soleil
 
-Les murs sont en pisé : de la terre du terrain, compactée couche par couche. C'est le grand-père de Rachid qui les a montés. Ils sont épais, frais l'été, et gardent la chaleur de la cheminée l'hiver. La piscine est remplie par la source de la vallée, pas par le réseau. L'eau chaude des chambres vient de chauffe-eau solaires sur le toit.
+Les murs sont en pisé : de la terre du terrain, compactée couche par couche. C'est le grand-père qui les a montés. Ils sont épais, frais l'été, et gardent la chaleur de la cheminée l'hiver. La piscine est remplie par la source de la vallée, pas par le réseau. L'eau chaude des chambres vient de chauffe-eau solaires sur le toit.
 
 {{photo: Un mur de pisé en gros plan, lumière du matin}}
 
@@ -50,10 +50,8 @@ Six chambres, toutes avec vue sur la vallée. Climatisation, salle de bain priv�
 {{id: hotes}}
 ## Les hôtes
 
-La maison est celle de la famille de Rachid. Le grand-père a monté les murs en pisé. Les parents ont ouvert les premières chambres aux voyageurs qui remontaient la vallée. Rachid a grandi ici, entre la palmeraie et les bassins.
+Rachid et sa famille tiennent la maison. Les murs en pisé sont ceux du grand-père. Le soir, la table est commune, ouverte à qui veut s'y asseoir, et libre à qui préfère sa terrasse. Chaque matin, une sortie est proposée, jamais imposée : on part avec quelqu'un du village, ou on reste au bord de l'eau. On y parle tachelhit, arabe et français.
 
-Aujourd'hui c'est lui qui accueille, qui guide les sorties et qui cuisine. Il connaît l'apiculteur, le boulanger et le jour du marché. Certains hôtes reviennent depuis trente-cinq ans. À la maison, on parle tachelhit, l'amazigh du Souss, et aussi arabe et français.
-
-{{photo: Rachid et la famille à table, ou devant la maison}}
+{{photo: La table commune, un soir}}
 
 {{cta: /fr/sejours/ | Choisir son séjour}}

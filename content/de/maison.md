@@ -30,7 +30,7 @@ Jeden Morgen wird ein Ausflug angeboten. Sie brechen im Morgengrauen mit einem G
 
 ## Der Stampflehm, die Quelle, die Sonne
 
-Die Wände sind aus Stampflehm: Erde vom Grundstück, Schicht für Schicht verdichtet. Rachids Großvater hat sie gebaut. Sie sind dick, im Sommer kühl, und halten im Winter die Wärme des Kamins. Der Pool wird von der Quelle des Tals gefüllt, nicht vom Leitungsnetz. Das warme Wasser der Zimmer kommt von Solarkollektoren auf dem Dach.
+Die Wände sind aus Stampflehm: Erde vom Grundstück, Schicht für Schicht verdichtet. Der Großvater hat sie gebaut. Sie sind dick, im Sommer kühl, und halten im Winter die Wärme des Kamins. Der Pool wird von der Quelle des Tals gefüllt, nicht vom Leitungsnetz. Das warme Wasser der Zimmer kommt von Solarkollektoren auf dem Dach.
 
 {{photo: Eine Stampflehmwand aus der Nähe, Morgenlicht}}
 
@@ -50,10 +50,8 @@ Sechs Zimmer, alle mit Blick ins Tal. Klimaanlage, eigenes Bad, WLAN, Handtüche
 {{id: hotes}}
 ## Die Gastgeber
 
-Das Haus gehört Rachids Familie. Der Großvater baute die Stampflehmwände. Die Eltern öffneten die ersten Zimmer für Reisende, die das Tal hinaufkamen. Rachid ist hier aufgewachsen, zwischen Palmenhain und Pools.
+Rachid und seine Familie führen das Haus. Die Stampflehmwände sind die des Großvaters. Abends ist der Tisch gemeinsam, offen für alle, die sich dazusetzen möchten, und frei für alle, die ihre Terrasse vorziehen. Jeden Morgen wird ein Ausflug angeboten, nie vorgeschrieben: man geht mit jemandem aus dem Dorf los oder bleibt am Wasser. Man spricht hier Taschelhit, Arabisch und Französisch.
 
-Heute empfängt er die Gäste, führt die Ausflüge und kocht. Er kennt den Imker, den Bäcker und den Markttag. Manche Gäste kommen seit fünfunddreißig Jahren wieder. Im Haus spricht man Taschelhit, die Amazigh-Sprache des Souss, dazu Arabisch und Französisch.
-
-{{photo: Rachid und die Familie am Tisch oder vor dem Haus}}
+{{photo: Der gemeinsame Tisch, an einem Abend}}
 
 {{cta: /de/aufenthalte/ | Aufenthalt wählen}}

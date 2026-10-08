@@ -39,7 +39,7 @@ Vol direct de trois heures pour Agadir-Al Massira depuis Paris, Lyon et Nantes, 
 
 ## De l'aéroport ou d'Agadir à la maison
 
-- **La navette de la maison.** Sur demande, à réserver avec votre séjour. Rachid ou un chauffeur du village vous attend à l'aéroport ou à votre hôtel d'Agadir. Tarif sur demande.
+- **La navette de la maison.** Sur demande, à réserver avec votre séjour. Un chauffeur du village vous attend à l'aéroport ou à votre hôtel d'Agadir. Tarif sur demande.
 - **En taxi.** Demander « Tifrit, vallée du Paradis, route d'Imouzzer ». Convenez du prix avant de partir.
 - **En voiture de location.** Les loueurs sont à l'aéroport. D'Agadir, prendre la route d'Aourir (N1 vers le nord), puis à Aourir tourner vers Imouzzer Ida Outanane. Passer le village d'Alma, suivre les panneaux « Paradise Valley ». La maison est au bord de la route, après les bassins. Parking gratuit devant la maison.
 - **En bus.** Des bus et grands taxis relient Agadir à Imouzzer. Dites-nous votre heure d'arrivée, on vient vous chercher à Imouzzer ou aux bassins.
