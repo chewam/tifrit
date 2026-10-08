@@ -93,7 +93,7 @@ NBSP = "\u00a0"
 
 def prix_html(s, lang, cls="prix", note=True):
     ui = UI[lang]; t = s[lang]; prix = s["prix"]
-    badge = "" if s.get("prix_confirme") or not note else f' <span class="todo">{ui["prix_indicatif"]}</span>'
+    badge = ""
     montant = prix["montant"].replace(" ", NBSP) + NBSP + prix["devise"]
     return f'<div class="{cls}"><strong>{montant}</strong><span>{inline(t["prix_detail"])}</span>{badge}</div>'
 

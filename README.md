@@ -12,7 +12,7 @@ Deux façons, au choix.
 
 | Pour changer… | Ouvrir |
 |---|---|
-| Les prix, le contenu des séjours | `data/sejours.json` (mettre `"prix_confirme": true` quand le prix est validé, sinon le site affiche « tarif indicatif ») |
+| Les prix, le contenu des séjours | `data/sejours.json` |
 | Les dates où la maison est complète | `data/disponibilites.json` |
 | Téléphone, WhatsApp, e-mail, moyens de paiement | `data/site.json` |
 | Les notes Google / Booking / Tripadvisor et les extraits d'avis | `data/avis.json` |
