@@ -77,24 +77,71 @@ def placeholder(label, lang, cls=""):
         return f'<div class="mock {cls}" data-badge="{UI[lang]["mock_badge"]}">{picture(fn, label)}</div>'
     return f'<div class="ph {cls}"><span>{UI[lang]["photo_soon"]}</span><em>{inline(label)}</em></div>'
 
+ICONS = {
+ "eau": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><path d="M2 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><path d="M2 7c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/></svg>',
+ "soleil": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+ "table": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18l-2 7H5z"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>',
+ "navette": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14l2-6-4-1-3-4H9L6 10l-4 1z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>',
+ "star": '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7 7 .6-5.3 4.6L18.5 22 12 18l-6.5 4 1.8-7.8L2 9.6 9 9z"/></svg>',
+ "arrow": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>',
+}
+
+def phare():
+    return next((s for s in SEJOURS["formules"] if s.get("phare")), SEJOURS["formules"][0])
+
+def prix_html(s, lang, cls="prix", note=True):
+    ui = UI[lang]; t = s[lang]; prix = s["prix"]
+    badge = "" if s.get("prix_confirme") or not note else f' <span class="todo">{ui["prix_indicatif"]}</span>'
+    return f'<div class="{cls}"><strong>{prix["montant"]} {prix["devise"]}</strong><span>{inline(t["prix_detail"])}</span>{badge}</div>'
+
+def render_confort(lang):
+    ui = UI[lang]
+    items = "".join(f'<div>{ICONS.get(c.get("icone",""), "")}<p><b>{inline(c["titre"])}</b><small>{inline(c["texte"])}</small></p></div>' for c in ui.get("confort", []))
+    return f'<section class="confort" aria-label="{ui["confort_label"]}"><div class="wrap">{items}</div></section>' if items else ""
+
+def render_phare(lang):
+    ui = UI[lang]; s = phare(); t = s[lang]
+    nights = re.search(r"\d+", t.get("sous_titre", "")); n = nights.group(0) if nights else ""
+    days = "".join(f'<li><b>J{i}</b><span>{inline(d["texte"])}</span></li>' for i, d in enumerate(t["jours"], 1))
+    media = placeholder(ui["phare_photo"], lang) if ui.get("phare_photo") else picture("bassins.jpg", t["titre"])
+    return f'''<section class="phare-panel" id="phare">
+  <div class="text">
+    <div class="tags"><span class="eyebrow">{ui["phare_label"]}</span><span class="pill">{ui["phare_pill"].replace("{n}", n)}</span></div>
+    <h2>{inline(t["titre"])}</h2>
+    <p>{inline(t["intro"])}</p>
+    <ol>{days}</ol>
+    <div class="foot">{prix_html(s, lang)}<a class="btn btn-light" href="{page_url(lang,"sejours")}#{s["id"]}">{ui["phare_btn"]}</a></div>
+  </div>
+  <div class="media">{media}</div>
+</section>'''
+
 def render_sejours(lang):
-    ui = UI[lang]; out = ['<div class="sejours">']
+    ui = UI[lang]; out = ['<div class="compare">']
+    for s in SEJOURS["formules"]:
+        t = s[lang]; ph = s.get("phare")
+        tag = f'<span class="tag">{ui["compare_tag"]}</span>' if ph else ""
+        cls = ' class="phare"' if ph else ""
+        out.append(f'<a href="#{s["id"]}"{cls}>{tag}<small>{inline(t["sous_titre"])}</small><h3>{inline(t["titre"])}</h3>{prix_html(s, lang, note=False)}<p>{inline(t["intro"].split(". ")[0])}.</p></a>')
+    n = SEJOURS["nuit_seule"]; tn = n[lang]
+    out.append(f'<a href="#nuit" class="nuit-c"><small>{ui["nuit_eyebrow"]}</small><h3>{inline(tn["titre"])}</h3>{prix_html(n, lang, note=False)}<p>{inline(tn["texte"].split(". ")[0])}.</p></a>')
+    out.append(f'</div><p class="compare-note">{ui["compare_note"]}</p><div class="sejours">')
     for s in SEJOURS["formules"]:
         t = s[lang]
-        prix = s["prix"]
-        badge = "" if s.get("prix_confirme") else f'<span class="todo">{ui["prix_indicatif"]}</span>'
-        days = "".join(f"<li><strong>{inline(d['titre'])}</strong> {inline(d['texte'])}</li>" for d in t["jours"])
+        days = "".join(f"<li><strong>{inline(d['titre'])}</strong><span>{inline(d['texte'])}</span></li>" for d in t["jours"])
         inc = "".join(f"<li>{inline(x)}</li>" for x in t["inclus"])
         pas = "".join(f"<li>{inline(x)}</li>" for x in t["pas_pour"])
         out.append(f'''<article class="sejour{' phare' if s.get('phare') else ''}" id="{s['id']}">
-  <div class="sejour-head"><div><div class="eyebrow">{inline(t['sous_titre'])}</div><h2>{inline(t['titre'])}</h2></div>
-  <div class="prix"><strong>{prix['montant']} {prix['devise']}</strong><span>{inline(t['prix_detail'])}</span>{badge}</div></div>
-  <p class="lead">{inline(t['intro'])}</p>
-  <div class="sejour-cols">
-    <div><h3>{ui['chaque_jour']}</h3><ol class="jours">{days}</ol></div>
-    <div><h3>{ui['inclus']}</h3><ul class="check">{inc}</ul><h3>{ui['pas_pour']}</h3><ul class="non">{pas}</ul></div>
+  <div>
+    <div class="sejour-head"><div class="eyebrow">{inline(t['sous_titre'])}</div><h2>{inline(t['titre'])}</h2></div>
+    <p class="lead">{inline(t['intro'])}</p>
+    <h3>{ui['chaque_jour']}</h3><ol class="jours">{days}</ol>
   </div>
-  <a class="btn btn-primary" href="{page_url(lang,'reserver')}?sejour={s['id']}">{ui['reserver_ce_sejour']}</a>
+  <aside class="sejour-aside">
+    {prix_html(s, lang)}
+    <div class="block"><h3>{ui['inclus']}</h3><ul class="check">{inc}</ul></div>
+    <div class="block"><h3>{ui['pas_pour']}</h3><ul class="non">{pas}</ul></div>
+    <a class="btn btn-primary" href="{page_url(lang,'reserver')}?sejour={s['id']}">{ui['reserver_ce_sejour']}</a>
+  </aside>
 </article>''')
     out.append("</div>")
     return "\n".join(out)
@@ -102,49 +149,63 @@ def render_sejours(lang):
 def render_avis(lang):
     ui = UI[lang]; out = ['<div class="notes">']
     for src in AVIS["sources"]:
-        if not src.get("note") and not src.get("nb"): continue
-        score = f'<strong>{src["note"]}</strong><span>{src["sur"]}</span>' if src.get("note") else f'<strong>{src["nb"]}</strong><span> {ui["nb_avis"]}</span>'
-        label = f'{src["nom"]} · {src["nb"]} {ui["avis"]}' if src.get("note") else src["nom"]
-        out.append(f'<a class="note" href="{src.get("url","#")}" target="_blank" rel="noopener">{score}<em>{label}</em></a>')
+        if not src.get("note"): continue
+        out.append(f'<a class="note" href="{src.get("url","#")}" target="_blank" rel="noopener"><em>{src["nom"]} ·</em><strong>{src["note"]}</strong><span>{src["sur"]}</span></a>')
     out.append('</div><div class="quotes">')
     for a in AVIS["extraits"]:
-        out.append(f'<blockquote class="quote" lang="{a["lang"]}"><p>« {inline(a["texte"])} »</p><footer>{inline(a["auteur"])} · {a["source"]} · {a["date"]}</footer></blockquote>')
+        out.append(f'<blockquote class="quote" lang="{a["lang"]}"><p>« {inline(a["texte"])} »</p><footer><b>{inline(a["auteur"])}</b> · {a["source"]}, {a["date"]}</footer></blockquote>')
     out.append("</div>")
     return "\n".join(out)
 
 def render_reserver(lang):
     ui = UI[lang]; c = SITE["contact"]
     wa = re.sub(r"\D", "", c["whatsapp"])
-    opts = "".join(f'<option value="{s["id"]}">{inline(s[lang]["titre"])}</option>' for s in SEJOURS["formules"])
+    picks = []
+    for s in SEJOURS["formules"] + [dict(SEJOURS["nuit_seule"], id="nuit")]:
+        t = s[lang]; prix = s["prix"]
+        picks.append(f'<label class="pick"><input type="radio" name="sejour" value="{s["id"]}" data-titre="{html.escape(t["titre"])}" data-prix="{prix["montant"]} {prix["devise"]}" data-detail="{html.escape(t["prix_detail"])}"{" checked" if s.get("phare") else ""}><small>{inline(t.get("sous_titre", ui["nuit_eyebrow"]))}</small><b>{inline(t["titre"])}</b><i>{prix["montant"]} {prix["devise"]}</i></label>')
     pay = "".join(f"<li>{inline(p[lang])}</li>" for p in SITE["paiement"])
+    strings = {k: ui[k] for k in ["recap_a_preciser", "recap_du", "recap_oui", "recap_non", "preview_text", "preview_nom", "adulte", "adultes", "enfant", "enfants", "f_navette", "f_adultes", "f_enfants"]}
+    ph = phare()
     return f'''<div class="reserver">
+<form class="form" action="{SITE['form_action']}" method="POST" name="reservation" data-netlify="true" data-wa="{wa}" data-mail="{c['email']}" data-subject="{html.escape(ui['f_subject'])}" data-lang="{lang}" data-ui='{html.escape(json.dumps(strings, ensure_ascii=False), quote=True)}'>
+  <input type="hidden" name="lang" value="{lang}">
+  <fieldset><legend>{ui['f_sejour_legend']}</legend><div class="picks">{"".join(picks)}</div></fieldset>
+  <fieldset><legend>{ui['f_dates_legend']}</legend>
+    <div class="row r4">
+      <label>{ui['f_arrivee']}<input type="date" name="arrivee" required></label>
+      <label>{ui['f_depart']}<input type="date" name="depart" required></label>
+      <label>{ui['f_adultes']}<span class="stepper"><button type="button" data-step="-1" aria-label="{ui['f_moins']}">−</button><output name="adultes_out">2</output><button type="button" data-step="1" aria-label="{ui['f_plus']}">+</button><input type="hidden" name="adultes" value="2" data-min="1" data-max="12"></span></label>
+      <label>{ui['f_enfants']}<span class="stepper"><button type="button" data-step="-1" aria-label="{ui['f_moins']}">−</button><output name="enfants_out">0</output><button type="button" data-step="1" aria-label="{ui['f_plus']}">+</button><input type="hidden" name="enfants" value="0" data-min="0" data-max="10"></span></label>
+    </div>
+    <label class="chk"><input type="checkbox" name="navette" value="1" checked>{ui['f_navette']}</label>
+  </fieldset>
+  <fieldset><legend>{ui['f_vous_legend']}</legend>
+    <div class="row"><label>{ui['f_nom']}<input type="text" name="nom" required autocomplete="name"></label><label>{ui['f_tel']}<input type="tel" name="tel" autocomplete="tel"></label></div>
+    <label>{ui['f_email']}<input type="email" name="email" required autocomplete="email"></label>
+    <label>{ui['f_message']}<textarea name="message" rows="3"></textarea></label>
+  </fieldset>
+  <div class="actions"><button class="btn btn-accent" type="submit">{ICONS["arrow"]}{ui['f_envoyer']}</button><button class="btn btn-ghost" type="button" data-mail>{ui['f_mail_btn']}</button></div>
+  <p class="small">{ui['f_note']}</p>
+</form>
 <div class="reserver-side">
-  <a class="btn wa" href="https://wa.me/{wa}?text={html.escape(ui['wa_message'])}" target="_blank" rel="noopener">{ui['wa_btn']}</a>
-  <p class="small">{ui['wa_note']}</p>
-  <p><a href="tel:{c['telephone'].replace(' ','')}">{c['telephone']}</a><br><a href="mailto:{c['email']}">{c['email']}</a></p>
+  <div class="recap"><div class="media">{picture("piscine-soir.jpg", "")}</div><div class="text">
+    <span class="eyebrow">{ui['recap_title']}</span>
+    <dl><div><dt>{ui['recap_sejour']}</dt><dd data-recap="sejour">{inline(ph[lang]['titre'])}</dd></div><div><dt>{ui['recap_dates']}</dt><dd data-recap="dates">{ui['recap_a_preciser']}</dd></div><div><dt>{ui['recap_personnes']}</dt><dd data-recap="personnes">2 {ui['adultes']}</dd></div><div><dt>{ui['recap_navette']}</dt><dd data-recap="navette">{ui['recap_oui']}</dd></div></dl>
+    <div class="prix"><strong data-recap="prix">{ph['prix']['montant']} {ph['prix']['devise']}</strong><span data-recap="detail">{inline(ph[lang]['prix_detail'])}</span><span> · {ui['recap_prix_note']}</span></div>
+  </div></div>
+  <div class="preview"><span class="eyebrow">{ui['preview_title']}</span><p data-preview></p></div>
+  <p class="small">{ui['direct']} <a href="https://wa.me/{wa}?text={html.escape(ui['wa_message'])}" target="_blank" rel="noopener">WhatsApp</a> · <a href="tel:{c['telephone'].replace(' ','')}">{c['telephone']}</a> · <a href="mailto:{c['email']}">{c['email']}</a></p>
   <h3>{ui['paiement']}</h3><ul class="check">{pay}</ul>
   <h3>{ui['disponibilites']}</h3>
   <div id="cal" data-dispo='{json.dumps(DISPO, ensure_ascii=False)}' data-lang="{lang}"></div>
   <p class="small">{ui['cal_note']}</p>
-</div>
-<form class="form" action="{SITE['form_action']}" method="POST" name="reservation" data-netlify="true" data-wa="{wa}" data-mail="{c['email']}" data-intro="{html.escape(ui['wa_message'])}" data-subject="{html.escape(ui['f_subject'])}">
-  <input type="hidden" name="lang" value="{lang}">
-  <div class="row"><label>{ui['f_arrivee']}<input type="date" name="arrivee" required></label><label>{ui['f_depart']}<input type="date" name="depart" required></label></div>
-  <div class="row"><label>{ui['f_personnes']}<select name="personnes"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></label>
-  <label>{ui['f_sejour']}<select name="sejour" id="sejour"><option value="">{ui['f_sejour_libre']}</option>{opts}</select></label></div>
-  <label>{ui['f_nom']}<input type="text" name="nom" required></label>
-  <label>{ui['f_email']}<input type="email" name="email" required></label>
-  <label>{ui['f_message']}<textarea name="message" rows="4"></textarea></label>
-  <button class="btn btn-primary" type="submit">{ui['f_envoyer']}</button>
-  <p class="small">{ui['f_note']}</p>
-</form></div>'''
+</div></div>'''
 
 def render_nuit(lang):
     ui = UI[lang]; n = SEJOURS["nuit_seule"]; t = n[lang]
-    badge = "" if n.get("prix_confirme") else f'<span class="todo">{ui["prix_indicatif"]}</span>'
-    return (f'<div class="nuit"><div><h3>{inline(t["titre"])}</h3><p>{inline(t["texte"])}</p></div>'
-            f'<div class="prix"><strong>{n["prix"]["montant"]} {n["prix"]["devise"]}</strong><span>{inline(t["prix_detail"])}</span>{badge}</div>'
-            f'<a class="btn btn-outline" href="{page_url(lang,"reserver")}">{ui["f_sejour_libre_btn"]}</a></div>')
+    return (f'<div class="nuit" id="nuit"><div class="media">{picture("chambre-2.jpg", t["titre"])}</div><div class="text"><div class="eyebrow">{ui["nuit_eyebrow"]}</div><h3>{inline(t["titre"])}</h3><p>{inline(t["texte"])}</p>'
+            f'{prix_html(n, lang)}<a class="btn btn-primary" href="{page_url(lang,"reserver")}?sejour=nuit">{ui["f_sejour_libre_btn"]}</a></div></div>')
 
 def render_map(lang):
     ui = UI[lang]; g = SITE.get("geo", {}); lat, lng = g.get("lat"), g.get("lng")
@@ -172,11 +233,11 @@ def render_journal(lang, pages):
 
 # ---------- block markdown ----------
 def md_to_html(body, lang, pages):
-    lines = body.split("\n"); out = []; i = 0; para = []; mode = None; block = []; gallery_cols = ""
+    lines = body.split("\n"); out = []; i = 0; para = []; mode = None; block = []; gallery_cols = ""; last_cards = None
     def flush():
         if para: out.append(f"<p>{inline(' '.join(para))}</p>"); para.clear()
     def close_block():
-        nonlocal mode, block
+        nonlocal mode, block, last_cards
         if mode in ("cards", "facts"):
             items = []; cur = None
             for l in block:
@@ -185,13 +246,21 @@ def md_to_html(body, lang, pages):
                 elif cur is not None and l.strip():
                     cur["b"].append(l.strip())
             cls = "cards cards-text" if mode == "cards" else "facts"
+            if mode == "cards": last_cards = (len(out), items)
             out.append(f'<div class="{cls}">' + "".join(
                 (f'<div class="card"><div class="body">' if mode=="cards" else f'<div class="fact"><div class="num">{n:02d}</div>') +
                 f"<h3>{inline(it['t'])}</h3>" + "".join(f"<p>{inline(x)}</p>" for x in it["b"]) +
                 ("</div></div>" if mode=="cards" else "</div>") for n, it in enumerate(items, 1)) + "</div>")
         elif mode == "gallery":
             cls = f" g{gallery_cols}" if gallery_cols else ""
-            out.append(f'<div class="gallery{cls}">' + "".join(block) + "</div>")
+            if last_cards and last_cards[0] == len(out) - 1 and len(last_cards[1]) == len(block):
+                # tuiles texte suivies d'autant de photos : on fusionne en tuiles photo
+                out[-1] = '<div class="cards-photo">' + "".join(
+                    f'<div class="card"><div class="media">{img}</div><div class="body"><h3>{inline(it["t"])}</h3>' + "".join(f"<p>{inline(x)}</p>" for x in it["b"]) + "</div></div>"
+                    for it, img in zip(last_cards[1], block)) + "</div>"
+            else:
+                out.append(f'<div class="gallery{cls}">' + "".join(block) + "</div>")
+            last_cards = None
         mode = None; block = []
     while i < len(lines):
         l = lines[i]; s = l.strip()
@@ -200,6 +269,14 @@ def md_to_html(body, lang, pages):
             flush(); mode = m.group(1); block = []; gallery_cols = (m.group(2) or "").strip(); i += 1; continue
         if re.match(r"\{\{/(cards|facts|gallery)\}\}$", s):
             flush(); close_block(); i += 1; continue
+        if s == "{{split}}":
+            flush(); j = i + 1; inner = []
+            while j < len(lines) and lines[j].strip() != "{{/split}}": inner.append(lines[j]); j += 1
+            parts = md_to_html("\n".join(inner), lang, pages).split("\n")
+            media = [x for x in parts if x.startswith(('<div class="gallery', '<picture', '<div class="mock', '<div class="ph'))]
+            text = [x for x in parts if x not in media]
+            out.append(f'<section class="split"><div class="text">{"".join(text)}</div><div class="media">{"".join(media)}</div></section>')
+            i = j + 1; continue
         if mode in ("cards", "facts"):
             block.append(l); i += 1; continue
         if m:
@@ -213,6 +290,9 @@ def md_to_html(body, lang, pages):
             elif kind == "reserver": h = render_reserver(lang)
             elif kind == "id": h = f'<div id="{parts[0]}" class="anchor"></div>'
             elif kind == "nuit": h = render_nuit(lang)
+            elif kind == "phare": h = render_phare(lang)
+            elif kind == "dates":
+                h = '<div class="eau-dates">' + "".join(f"<div><b>{inline(x.split('~')[0])}</b><small>{inline(x.split('~')[1] if '~' in x else '')}</small></div>" for x in parts) + "</div>"
             elif kind == "map": h = render_map(lang)
             else: h = ""
             (block if mode == "gallery" else out).append(h); i += 1; continue
@@ -298,14 +378,17 @@ def render_page(page):
     body_html = md_to_html(page["body"], lang, PAGES)
     tag = f"<p>{inline(meta['tagline'])}</p>" if meta.get("tagline") else ""
     tag_lead = f'<p class="lead">{inline(meta["tagline"])}</p>' if meta.get("tagline") else ""
-    cta = (f'<div class="hero-cta"><a class="btn btn-primary" href="{page_url(lang,"sejours")}">{ui["voir_sejours"]}</a>'
+    cta = (f'<div class="hero-cta"><a class="btn btn-primary" href="{page_url(lang,"sejours")}">{ui["voir_sejours"]}{ICONS["arrow"]}</a>'
            f'<a class="btn btn-ghost" href="{page_url(lang,"reserver")}">{ui["nav"]["reserver_long"]}</a></div>') if page["key"] == "index" else ""
     if MAQUETTE.get("actif") and MAQUETTE.get("hero", {}).get(page["key"]):
         meta = dict(meta, hero_img=MAQUETTE["hero"][page["key"]], hero_mock=True)
     if meta.get("hero_img"):
         strip = "".join(f"<span>{inline(x)}</span>" for x in ui.get("strip", [])) if page["key"] == "index" else ""
         strip_html = f'<div class="strip">{strip}</div>' if strip else ""
-        hero = f'<header class="hero"><div class="hero-media{" mock" if meta.get("hero_mock") else ""}" data-badge="{ui["mock_badge"]}">{picture(meta["hero_img"], meta.get("hero_alt",""), sizes="100vw", lazy=False)}</div><div class="wrap"><h1>{inline(meta["title"])}</h1><div class="hero-side">{tag}{cta}</div></div>{strip_html}</header>'
+        badge = f'<span class="badge">{inline(ui["hero_badge"])}</span>' if page["key"] == "index" and ui.get("hero_badge") else ""
+        g = next((x for x in AVIS["sources"] if x.get("note") and x["nom"].lower().startswith("google")), None)
+        rating = f'<div class="rating"><i>{ICONS["star"]*5}</i><span><strong>{g["note"]} {g["sur"]}</strong> {ui["rating_on"]}</span></div>' if g and page["key"] == "index" else ""
+        hero = f'<header class="hero"><div class="hero-media{" mock" if meta.get("hero_mock") else ""}" data-badge="{ui["mock_badge"]}">{picture(meta["hero_img"], meta.get("hero_alt",""), sizes="100vw", lazy=False)}</div><div class="wrap">{badge}<h1>{inline(meta["title"])}</h1><div class="hero-side">{tag}{cta}{rating}</div></div>{strip_html}</header>'
     elif meta.get("hero_photo"):
         hero = f'<header class="hero hero-ph"><div class="hero-media">{placeholder(meta["hero_photo"], lang)}</div><div class="wrap"><h1>{inline(meta["title"])}</h1>{tag}</div></header>'
     else:
@@ -313,7 +396,14 @@ def render_page(page):
     if page["section"] == "journal":
         hero = f'<header class="page-head"><div class="wrap"><div class="eyebrow">{meta.get("date","")}</div><h1>{inline(meta["title"])}</h1><p class="lead">{inline(meta.get("description",""))}</p></div></header>'
     c = SITE["contact"]; wa = re.sub(r"\D", "", c["whatsapp"])
-    return (BASE.replace("{{lang}}", lang).replace("{{title}}", html.escape(meta["title"]) + " · " + SITE["nom"])
+    ph = phare(); pt = ph[lang]
+    footer_nav = "".join(f'<a href="{page_url(lang,k)}">{ui["nav"][k]}</a>' for k in ["maison", "sejours", "vallee", "acces", "avis"])
+    return (BASE.replace("{{lang}}", lang).replace("{{title}}", html.escape(meta["title"].replace("*", "")) + " · " + SITE["nom"])
+            .replace("{{brand_tag}}", ui["brand_tag"]).replace("{{confort}}", render_confort(lang) if page["key"] == "index" else "")
+            .replace("{{band_title}}", ui["band_title"]).replace("{{band_text}}", ui["band_text"]).replace("{{band_btn}}", ui["band_btn"])
+            .replace("{{reserver_url}}", page_url(lang, "reserver")).replace("{{footer_site}}", ui["footer_site"]).replace("{{footer_nav}}", footer_nav)
+            .replace("{{footer_contact_title}}", ui["footer_contact_title"]).replace("{{footer_follow}}", ui["footer_follow"])
+            .replace("{{sticky_label}}", ui["sticky_label"].replace("{titre}", pt["titre"])).replace("{{sticky_price}}", ui["sticky_price"].replace("{prix}", f'{ph["prix"]["montant"]} {ph["prix"]["devise"]}')).replace("{{sticky_btn}}", ui["sticky_btn"])
             .replace("{{description}}", html.escape(meta.get("description", "")))
             .replace("{{canonical}}", SITE["url"] + page["url"]).replace("{{hreflangs}}", hreflangs(page))
             .replace("{{jsonld}}", jsonld(lang) if page["key"] == "index" else "")
@@ -321,8 +411,8 @@ def render_page(page):
             .replace("{{home}}", f"/{lang}/").replace("{{site_name}}", SITE["nom"]).replace("{{hero}}", hero)
             .replace("{{content}}", body_html).replace("{{narrow}}", "narrow" if page["section"] == "journal" or meta.get("narrow") else "")
             .replace("{{footer_adresse}}", f"{SITE['adresse']['rue']}, {SITE['adresse']['ville']} {SITE['adresse']['cp']}, {SITE['adresse']['pays'][lang]}")
-            .replace("{{footer_contact}}", f'<a href="https://wa.me/{wa}">WhatsApp</a> · <a href="tel:{c["telephone"].replace(" ","")}">{c["telephone"]}</a> · <a href="mailto:{c["email"]}">{c["email"]}</a>')
-            .replace("{{footer_links}}", " · ".join(f'<a href="{s["url"]}" rel="noopener" target="_blank">{s["nom"]}</a>' for s in SITE["reseaux"]))
+            .replace("{{footer_contact}}", f'<a href="tel:{c["telephone"].replace(" ","")}">{c["telephone"]}</a><a href="https://wa.me/{wa}">WhatsApp</a><a href="mailto:{c["email"]}">{c["email"]}</a>')
+            .replace("{{footer_links}}", "".join(f'<a href="{s["url"]}" rel="noopener" target="_blank">{s["nom"]}</a>' for s in SITE["reseaux"]))
             .replace("{{menu_label}}", ui["menu"]).replace("{{year}}", str(datetime.date.today().year))
             .replace("{{footer_note}}", ui["footer_note"]).replace("{{skip}}", ui["skip"])
             .replace("{{body_class}}", "has-hero" if meta.get("hero_img") else "")

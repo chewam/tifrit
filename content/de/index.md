@@ -1,5 +1,5 @@
 ---
-title: Das Paradise Valley, abseits der Menge
+title: Das Paradise Valley, *abseits der Menge*
 tagline: Ein Haus im Palmenhain, 640 m über dem Tal. Und die Menschen, die es zeigen.
 description: Maison d'hôtes Tifrit, Unterkunft im Paradise Valley bei Agadir (Imouzzer Ida Outanane, Marokko). Aufenthalte von 3 bis 5 Tagen, Naturpools, Imkerei, Küche des Dorfes. 40 Minuten von Agadir, abseits der Menge.
 hero_img: hero-piscine.jpg
@@ -29,22 +29,22 @@ Donnerstags. Gemüse, Honig, Arganöl und die Menschen, die sie herstellen.
 {{photo: Der Markt in Imouzzer an einem Donnerstag}}
 {{/gallery}}
 
-## 3 Tage in Tifrit
+{{phare}}
 
-Drei Nächte, alle Mahlzeiten, zwei Ausflüge mit einem Guide aus dem Dorf, Tajine kochen und der Besuch beim Imker. Jeder Tag ist ein Angebot, keiner ist Pflicht. Preis alles inklusive, offen angegeben.
-
-{{cta: /de/aufenthalte/#trois-jours | Angebot und Preis ansehen}}
-
+{{split}}
 ## Das Tal hat sein Wasser zurück
 
 Sieben Jahre ohne Regen, 2018 bis 2025. Dann der Winter 2026: die Quellen fließen wieder, die Pools sind voll, die Wasserfälle von Imouzzer rauschen. Das Haus lebt mit diesem Wasser und schützt es: Quellwasserpool, solares Warmwasser, Stampflehmwände, Gemüse und Honig aus dem Dorf.
+
+{{dates: 2018–2025 ~ sieben Jahre Dürre | Winter 2026 ~ die Quellen kehren zurück}}
+
+{{cta: /de/tal/ | Das Tal und das Wasser}}
 
 {{gallery: 2}}
 {{photo: Die vollen Pools, 2026}}
 {{photo: Der Wasserfall von Imouzzer mit Wasser, 2026}}
 {{/gallery}}
-
-{{cta: /de/tal/ | Das Tal und das Wasser}}
+{{/split}}
 
 ## Abseits der Menge, 40 Minuten von Agadir
 

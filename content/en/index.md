@@ -1,5 +1,5 @@
 ---
-title: Paradise Valley, away from the crowds
+title: Paradise Valley, *away from the crowds*
 tagline: A house in the palm grove, 640 m above the valley. And the people who show it to you.
 description: Maison d'hôtes Tifrit, Paradise Valley accommodation (Imouzzer Ida Outanane, Morocco). 3 to 5 day stays, natural pools, beekeeping, village cooking. 40 minutes from Agadir, away from the crowds.
 hero_img: hero-piscine.jpg
@@ -29,22 +29,22 @@ On Thursdays. Vegetables, honey, argan oil and the people who make them.
 {{photo: Imouzzer market on a Thursday}}
 {{/gallery}}
 
-## 3 days at Tifrit
+{{phare}}
 
-Three nights, all meals, two outings with a guide from the village, tagine cooking and the beekeeper visit. Every day is offered, none is compulsory. All-inclusive price, shown.
-
-{{cta: /en/stays/#trois-jours | See the stay and the price}}
-
+{{split}}
 ## The valley has its water back
 
 Seven years without rain, 2018 to 2025. Then the winter of 2026: the springs started again, the pools filled up, the Imouzzer waterfalls are flowing. The house lives with this water and protects it: spring-fed pool, solar hot water, rammed-earth walls, vegetables and honey from the village.
+
+{{dates: 2018–2025 ~ seven years of drought | Winter 2026 ~ the springs return}}
+
+{{cta: /en/valley/ | The valley and the water}}
 
 {{gallery: 2}}
 {{photo: The pools full, 2026}}
 {{photo: The Imouzzer waterfall flowing, 2026}}
 {{/gallery}}
-
-{{cta: /en/valley/ | The valley and the water}}
+{{/split}}
 
 ## Away from the crowds, 40 minutes from Agadir
 

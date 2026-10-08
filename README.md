@@ -21,6 +21,8 @@ Deux façons, au choix.
 
 Dans les textes, `{{photo: légende}}` réserve un emplacement « photo à venir ». Remplacer par `{{img: fichier.jpg | légende}}` quand la photo existe.
 
+Autres raccourcis dans les pages : `{{phare}}` affiche la formule phare de `data/sejours.json` en panneau sombre ; `{{split}} … {{/split}}` met un bloc en deux colonnes (texte à gauche, photos à droite) ; `{{dates: 2018–2025 ~ légende | Hiver 2026 ~ légende}}` affiche des repères de dates. Un bloc `{{cards}}` suivi d'une galerie avec autant de photos devient des tuiles illustrées. Les textes d'interface (bande confort, bandeau de contact, formulaire) sont dans `data/ui.json`.
+
 ## Photos d'illustration (maquette)
 
 Pour visualiser le rendu avant les vraies photos, `data/maquette.json` associe des photos trouvées sur le web (dossier `static/images/mock-*.jpg`) aux emplacements « photo à venir ». Elles s'affichent avec la mention « photo d'illustration, à remplacer ». Elles ne doivent pas être publiées : mettre `"actif": false` avant la mise en ligne, ou supprimer les fichiers `mock-*`. Les sources sont listées dans le même fichier.

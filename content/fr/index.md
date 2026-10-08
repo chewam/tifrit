@@ -1,5 +1,5 @@
 ---
-title: La vallée du Paradis, loin des foules
+title: La vallée du Paradis, *loin des foules*
 tagline: Une maison dans la palmeraie, à 640 m au-dessus de la vallée. Et les gens qui la font visiter.
 description: Maison d'hôtes Tifrit, vallée du Paradis (Imouzzer Ida Outanane, Maroc). Séjours de 3 à 5 jours, piscines naturelles, apiculture, cuisine du village. À 40 minutes d'Agadir, loin des foules.
 hero_img: hero-piscine.jpg
@@ -29,22 +29,22 @@ Le jeudi. Les légumes, le miel, l'huile d'argan et les gens qui les font.
 {{photo: Le marché d'Imouzzer un jeudi}}
 {{/gallery}}
 
-## 3 jours à Tifrit
+{{phare}}
 
-Trois nuits, tous les repas, deux sorties avec un guide du village, la cuisine du tajine et la visite de l'apiculteur. Chaque journée est proposée, aucune n'est obligatoire. Prix tout compris, affiché.
-
-{{cta: /fr/sejours/#trois-jours | Voir la formule et le prix}}
-
+{{split}}
 ## La vallée a retrouvé son eau
 
 Sept ans sans pluie, de 2018 à 2025. Puis l'hiver 2026 : les sources sont reparties, les bassins se sont remplis, les cascades d'Imouzzer coulent de nouveau. La maison vit avec cette eau et la protège : piscine à l'eau de source, eau chaude solaire, murs en pisé, légumes et miel du village.
+
+{{dates: 2018–2025 ~ sept années de sécheresse | Hiver 2026 ~ les sources repartent}}
+
+{{cta: /fr/vallee/ | La vallée et l'eau}}
 
 {{gallery: 2}}
 {{photo: Les bassins pleins, 2026}}
 {{photo: La cascade d'Imouzzer en eau, 2026}}
 {{/gallery}}
-
-{{cta: /fr/vallee/ | La vallée et l'eau}}
+{{/split}}
 
 ## Loin des foules, à 40 minutes d'Agadir
 
